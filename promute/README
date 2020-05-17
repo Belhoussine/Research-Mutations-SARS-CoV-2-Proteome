@@ -1,0 +1,92 @@
+File : README
+Last Change Date : 17 May 2020
+Authors : Katie Hursh, Dylan Carpenter, Gideon Wolfe, Filip Jagodzinski
+Contact : filip.jagodzinski@wwu.edu
+
+NOTE: The mutator code was originally part of the rMutant_2 project
+but has been edited in order to work as Promute.  Part of this
+modification is that all mutations now rely on SCWRL.
+
+This program invokes scwrl to perform an in silico mutation of a
+single residue in a given protein into a target residue. ProMute can
+reason about multiple chains.
+
+Installing Promute
+-------------------------
+1. cd into the promute folder.
+2. run make in the command line.
+3. cd into the build folder in order to invoke the rMutant program.
+
+Invoking promute
+-------------------------
+ProMute used stand-alone is for mutating a single
+residue. Format/order of the command line arguments:
+
+1. pdbID : 4 alphanumeric PDB ID, or ID for already mutated file
+2. chainID : 1 character chain where the mutation is performed
+3. residueNumber : residue number on which the mutation is to be performed
+4. mutationTarget : 1 character of target amino acid
+5. runEnergyMinimization : optional argument for forcing or denying
+                           energy minimization.  Value needs to be 'no'
+                           to deny running EM, or 'em' to force it to run
+                           EM, or "srem" which will invoke EM but only if
+			   the residue being mutated has a significant
+			   solvent accessible surface area (SASA)
+			   
+
+Example invocations
+-------------------------
+# in silico mutate residue 80 of chain A of 1HHP to a methionine
+./proMute 1HHP A 80 M
+
+# in silico mutate residue 1 of chain B of 1am7 to a alanine
+./proMute 1am7 b 1 a
+
+# if the first example has been run, in silico mutate residue 10 of chain A
+# of the 1HHP that has already been mutated to a glycine
+./proMute 1HHP.A80M A 10 G
+
+# in silico mutate residue 80 of chain A of 1HHP to a methionine without EM
+./proMute 1HHP A 80 M no
+
+# in silico mutate residue 80 of chain A of 1HHP to a serine with EM
+./proMute 1HHP A 80 S em
+
+# in silico mutate residue 80 of chain A of 1HHP to a serine with EM
+  but only if SASA criteria has been met
+./proMute 1HHP A 80 S srem
+
+
+Invoking proMuteBatch
+---------------------
+
+proMuteBatch creates a script, that can be invoked, which will in turn
+invoke proMute. ProMuteBatch can be informed mutliple targets/mutants
+to be produced
+
+Format/order of the command line arguments:
+
+1. pdbID : 4 character alphanumeric PDB ID, or extended ID for already
+           mutated files
+2. chainIDs : 3 characters in the format startChain:endChain.
+3. residueNumbers : residue numbers on which the separate mutations will be
+                    performed. Ranges are denoted with a colon, individual
+		    residues and ranges are separated with commas. X in the
+		    start of a range denotes all residues before the end
+		    residue.  X in the end of a range denotes all residues
+		    after the start residue.  X:X denotes all residues.
+4. mutationTargets : 1 character representation of what the residue is being
+                     mutated to, X for all possible targets, pol for polar
+					 targets, char for charged targets, phobic for hydrophobic
+					 targets.
+5. scriptFile : the script that is created
+
+Example invocations
+-------------------------
+# mutate residues 96 through the end of protein 1hvr in chains A and B to
+# alanine
+./proMuteBatch 1hvr A:B 96:X A
+
+# mutate residues 3 and 10 through 16 of protein 2ped chain A to the
+# hydrophobic amino acids
+./proMuteBatach 2ped A:A 3,10:16 phobic
