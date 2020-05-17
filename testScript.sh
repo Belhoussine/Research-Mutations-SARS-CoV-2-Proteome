@@ -12,6 +12,7 @@
 sed -i 's/$/ emsr/' emsrScript
 sed -i 's/$/ em/' emScript
 
+# Customize with your scripts
 FILES=("emScript")
 
 # Execute the lines in the script
