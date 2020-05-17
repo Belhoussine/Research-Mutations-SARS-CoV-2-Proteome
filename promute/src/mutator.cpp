@@ -472,8 +472,8 @@ int Mutator::performMutation(Protein inputProtein, char chain, int residue, char
   } else if(performEM == 'y' && performSR == 'y'){ // if EM is to be filtered by SR result
 		cout << endl << "Energy minimization being run with SR as per arguments." << endl << endl;
     if (shouldPerformEM(originResidue, mutant, chainNum, residue, PDBFilename, surfaceAlreadyRun, performSR)) {
-			cout << endl << "Conditions met, performing energy minimization." << endl << endl;
-			return performEnergyMinimization(outputBase);
+	    cout << endl << "Conditions met, performing energy minimization." << endl << endl;
+	    return performEnergyMinimization(outputBase);
 		} else {
 			cout << endl << "Conditions have not been met, skipping energy minimization." << endl << endl;
 			return 0;

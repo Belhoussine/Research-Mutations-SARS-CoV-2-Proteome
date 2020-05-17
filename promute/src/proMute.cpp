@@ -13,8 +13,8 @@ int main(int argc, char* argv[]) {
 		cout << "Chain and Target should be 1 character" << endl;
 		cout << "Usage: " << argv[0] << " protein chain residueNum target [em/no]" << endl;
 		return 1;
-	} else if (argc == 6 && (strlen(argv[5]) > 4 || (strcmp(argv[5],"no") && strcmp(argv[5],"em") && strcmp(argv[5],"emsr")))) {
-		cout << "Final argument should be 'em', 'emsr' or 'no'" << endl;
+	} else if (argc == 6 && (strlen(argv[5]) > 4 || (strcmp(argv[5],"no") && strcmp(argv[5],"em") && strcmp(argv[5],"srem")))) {
+		cout << "Final argument should be 'em', 'srem' or 'no'" << endl;
 		cout << "Usage: " << argv[0] << " protein chain residueNum target [em/no]" << endl;
 		return 1;
 	}
@@ -48,7 +48,7 @@ int main(int argc, char* argv[]) {
 		performEM = 'n';
 	} else if (argc == 6 && strcmp(argv[5],"em") == 0) {
 		performEM = 'y';
-	} else if (argc == 6 && strcmp(argv[5],"emsr") == 0) {
+	} else if (argc == 6 && strcmp(argv[5],"srem") == 0) {
 		performEM = 'y';
 		performSR = 'y';
 	}
