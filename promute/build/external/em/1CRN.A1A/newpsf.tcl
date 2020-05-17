@@ -18,7 +18,7 @@ pdb chainA.pdb
 coordpdb chainA.pdb A
 guesscoord
 
-writepsf 1PEF.A6K_autopsf.psf
+writepsf 1CRN.A1A_autopsf.psf
 
-writepdb 1PEF.A6K_autopsf.pdb
+writepdb 1CRN.A1A_autopsf.pdb
 
