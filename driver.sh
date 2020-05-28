@@ -32,7 +32,7 @@ for FILE in $FILES; do
     mkdir -p $OUTPUTDIRNAME
 
     # Directory to look for EM files that were generated
-    # Structure is PDBID.Res1LocationRes2
+    # Structure is PDBID.ChainLocationRes2
     EMDIRNAME=$(echo $LINE | awk '{ print $2"."$3$4$5 }')
 
     $LINE
