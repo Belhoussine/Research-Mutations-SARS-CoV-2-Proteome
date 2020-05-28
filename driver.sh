@@ -5,13 +5,13 @@
 # to profile different mutation scripts, you can run this script with the "time" command 
 
 # generate list of mutations
-# ./makeScript 1hhp A:A 1:10 X testMutations
+./proMuteBatch 6M0J E:E 493:493 X mutList
 
 # append the correct flags
-# sed -i 's/$/ em/' testMutations
+sed -i 's/$/ em/' mutList
 
 # Customize with your scripts
-FILES=("testMutations")
+FILES=("mutList")
 
 # Execute the lines in the script
 for FILE in $FILES; do
@@ -26,7 +26,7 @@ for FILE in $FILES; do
   for LINE in "${LINES[@]}"; do
 
     # Make a directory to store outputs
-    # Structure is PDBID.Res1.Location.Res2.output
+    # Structure is PDBID.Chain.Location.Res2.output
     OUTPUTDIRNAME=$(echo $LINE | awk '{ print $2"."$3"."$4"."$5".output" }')
     echo [INFO] Creating Directory $OUTPUTDIRNAME
     mkdir -p $OUTPUTDIRNAME
@@ -51,4 +51,3 @@ for FILE in $FILES; do
   mv *.output "${FILE}_output"
 
 done
-
