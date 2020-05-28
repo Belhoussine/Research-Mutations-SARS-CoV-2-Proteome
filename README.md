@@ -8,15 +8,15 @@ Promute builds fine on `archlinux 5.6.11-arch1-1`
 
 Surface Racer needs [libstdc++5](https://www.archlinux.org/packages/extra/x86_64/libstdc++5/)
 
-### `testScript.sh`
+### `driver.sh`
 
 This script is meant to compare the time and performance between proMute with Surface Racer enabled and disabled.
 
-Customize the script to run one or both of the generated mutant scripts from `makeScript`. Then *copy* the script into the proMute build directory. Now I know to check the makefile
+Customize the script to run one or both of the generated mutant scripts from `proMuteBatch`. Then *copy* the script into the proMute build directory. Now I know to check the makefile
 before writing scripts in the `build` directory...
 
 If you have `time` installed on your system (not the built in shell command, run with `/usr/bin/time`) you can profile the performance of the desired script with
 
 ```bash
-/usr/bin/time --verbose ./testScript
+/usr/bin/time --verbose ./driver.sh
 ```
