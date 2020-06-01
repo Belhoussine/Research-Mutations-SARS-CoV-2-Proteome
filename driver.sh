@@ -7,6 +7,30 @@
 # generate list of mutations
 ./proMuteBatch 6M0J E:E 493:493 X mutList
 
+declare -A residues
+residues+=( 
+  ["PHE"]="F" 
+  ["LEU"]="L" 
+  ["ILE"]="I"
+  ["MET"]="M"
+  ["VAL"]="V"
+  ["SER"]="S"
+  ["PRO"]="P"
+  ["THR"]="T"
+  ["ALA"]="A"
+  ["TYR"]="Y"
+  ["HIS"]="H"
+  ["GLN"]="Q"
+  ["ASN"]="N"
+  ["LYS"]="K"
+  ["ASP"]="D"
+  ["GLU"]="E"
+  ["CYS"]="C"
+  ["TRP"]="W"
+  ["ARG"]="R"
+  ["GLY"]="G"
+)
+
 # append the correct flags
 sed -i 's/$/ em/' mutList
 
@@ -16,8 +40,10 @@ FILES=("mutList")
 # Execute the lines in the script
 for FILE in $FILES; do
 
-  # Create a directory to store the output of the mutation script
-  mkdir -p "${FILE}_output"
+
+  # Create a file to store SDM script
+  SDMFILE="${FILE}_sdm"
+  touch $SDMFILE
 
   # Read each mutation into an array
   readarray -t LINES < "$FILE"
@@ -35,7 +61,19 @@ for FILE in $FILES; do
     # Structure is PDBID.ChainLocationRes2
     EMDIRNAME=$(echo $LINE | awk '{ print $2"."$3$4$5 }')
 
+    # Actually call proMute
     $LINE
+
+    # translate the promute command to an SDM script line
+    PDBID=$(echo $LINE | awk '{print $2}')
+    RESNUM=$(echo $LINE | awk '{print $4}')
+    CHAIN=$(echo $LINE | awk '{print $3}')
+    FINALRES=$(echo $LINE | awk '{print $5}')
+    ORIGRESCODE=$(cat ${PDBID}.pdb | grep ATOM | awk -v rn="$RESNUM" -v chn=$CHAIN '$6 == rn && $5 == chn {print $4}' | sed 's/.*\(...\)/\1/' | head -n 1)
+    ORIGRES=${residues[$ORIGRESCODE]}
+    # put this line in the script
+    echo $(echo $CHAIN $ORIGRES$RESNUM$FINALRES) >> $SDMFILE
+
 
     # Move all output files: PDB, Fasta, and EM data
     mv *.txt $OUTPUTDIRNAME
@@ -46,8 +84,10 @@ for FILE in $FILES; do
   done
   # cleanup output
   rm -rf "${FILE}_output"
+  mkdir -p "${FILE}_output"
   echo [INFO] Cleaning outputs from last run
   echo [INFO] Moving new files to "${FILE}_output"
-  mv *.output "${FILE}_output"
+  mv $SDMFILE "${FILE}_output/"
+  mv *.output "${FILE}_output/"
 
 done
