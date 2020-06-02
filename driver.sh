@@ -5,7 +5,15 @@
 # to profile different mutation scripts, you can run this script with the "time" command 
 
 # generate list of mutations
-./proMuteBatch 6M0J E:E 493:493 X mutList
+# ACE2 Mutations
+./proMuteBatch 6M0J A:A 31:31 X K31 # exhaustively mutate K at residue 31, chain A
+./proMuteBatch 6M0J A:A 34:34 X H34 # exhaustively mutate H at residue 34, chain A
+./proMuteBatch 6M0J A:A 35:35 X E35 # exhaustively mutate E at residue 35, chain A
+# RBD Domain mutations
+./proMuteBatch 6M0J E:E 453:453 X Y453 # exhaustively mutate Y at residue 453, chain E
+./proMuteBatch 6M0J E:E 492:492 X L492 # exhaustively mutate L at residue 492, chain E
+./proMuteBatch 6M0J E:E 494:494 X S494 # exhaustively mutate S at residue 494, chain E
+
 
 declare -A residues
 residues+=( 
@@ -32,10 +40,15 @@ residues+=(
 )
 
 # append the correct flags
-sed -i 's/$/ em/' mutList
+sed -i 's/$/ em/' K31
+sed -i 's/$/ em/' H43
+sed -i 's/$/ em/' E35
+sed -i 's/$/ em/' Y453
+sed -i 's/$/ em/' L492
+sed -i 's/$/ em/' L494
 
 # Customize with your scripts
-FILES=("mutList")
+FILES=("K31" "H34" "E35" "Y453" "L492" "L494")
 
 # Execute the lines in the script
 for FILE in $FILES; do
