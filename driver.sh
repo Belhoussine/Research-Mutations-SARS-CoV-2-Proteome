@@ -45,13 +45,13 @@ sed -i 's/$/ em/' H43
 sed -i 's/$/ em/' E35
 sed -i 's/$/ em/' Y453
 sed -i 's/$/ em/' L492
-sed -i 's/$/ em/' L494
+sed -i 's/$/ em/' S494
 
 # Customize with your scripts
-FILES=("K31" "H34" "E35" "Y453" "L492" "L494")
+FILES=("K31" "H34" "E35" "Y453" "L492" "S494")
 
 # Execute the lines in the script
-for FILE in $FILES; do
+for FILE in ${FILES[@]}; do
 
 
   # Create a file to store SDM script
@@ -92,9 +92,11 @@ for FILE in $FILES; do
     mv *.txt $OUTPUTDIRNAME
     mv *.pdb $OUTPUTDIRNAME
     mv external/em/$EMDIRNAME $OUTPUTDIRNAME
+    mv $FILE $OUTPUTDIRNAME
     echo [INFO] Moving files to $OUTPUTDIRNAME
 
   done
+
   # cleanup output
   rm -rf "${FILE}_output"
   mkdir -p "${FILE}_output"
