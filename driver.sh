@@ -85,8 +85,11 @@ for FILE in ${FILES[@]}; do
     ORIGRESCODE=$(cat ${PDBID}.pdb | grep ATOM | awk -v rn="$RESNUM" -v chn=$CHAIN '$6 == rn && $5 == chn {print $4}' | sed 's/.*\(...\)/\1/' | head -n 1)
     ORIGRES=${residues[$ORIGRESCODE]}
     # put this line in the script
-    echo $(echo $CHAIN $ORIGRES$RESNUM$FINALRES) >> $SDMFILE
-
+    if [ "$ORIGRES" != "$FINALRES" ]
+    then
+      # put this line in the script
+      echo $(echo $CHAIN $ORIGRES$RESNUM$FINALRES) >> $SDMFILE
+    fi
 
     # Move all output files: PDB, Fasta, and EM data
     mv *.txt $OUTPUTDIRNAME
