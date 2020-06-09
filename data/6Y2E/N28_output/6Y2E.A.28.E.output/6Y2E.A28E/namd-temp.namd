@@ -1,0 +1,21 @@
+coordinates      6Y2E.A28E_autopsf.pdb
+structure        6Y2E.A28E_autopsf.psf
+paraTypeCharmm   on
+parameters       minimization/scripts/par_all27_prot_lipid_na.inp
+exclude          scaled1-4
+
+temperature		 0
+cutoff			 12
+dielectric		 1.0
+switchdist		 10
+outputEnergies   500
+set ts 0
+set outp 0
+binaryoutput     no
+binaryrestart off
+restartname decoy_tmp
+restartfreq 500
+outputname out
+#   minimization on
+minimize 500
+file copy -force decoy_tmp.coor 6Y2E.A28E_min.pdb
