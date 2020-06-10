@@ -15,7 +15,7 @@ This script is meant to compare the time and performance between proMute with Su
 Customize the script to run one or both of the generated mutant scripts from `proMuteBatch`. Then *copy* the script into the proMute build directory. Now I know to check the makefile
 before writing scripts in the `build` directory...
 
-If you have `time` installed on your system (not the built in shell command, run with `/usr/bin/time`) you can profile the performance of the desired script with
+If you have `time` installed on the system (not the built in shell command, run with `/usr/bin/time`) you can profile the performance of the desired script with
 
 ```bash
 /usr/bin/time --verbose ./driver.sh
