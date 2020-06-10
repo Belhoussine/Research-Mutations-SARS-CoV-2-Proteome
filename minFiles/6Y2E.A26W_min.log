@@ -1,0 +1,1835 @@
+Charmrun> scalable start enabled. 
+Charmrun> started all node programs in 0.005 seconds.
+Converse/Charm++ Commit ID: v6.7.1-0-gbdf6a1b-namd-charm-6.7.1-build-2016-Nov-07-136676
+Warning> Randomization of stack pointer is turned on in kernel, thread migration may not work! Run 'echo 0 > /proc/sys/kernel/randomize_va_space' as root to disable it, or try run with '+isomalloc_sync'.  
+Charm++> scheduler running in netpoll mode.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 1 unique compute nodes (8-way SMP).
+Charm++> cpu topology info is gathered in 0.000 seconds.
+Info: NAMD 2.12 for Linux-x86_64
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Comp. Chem. 26:1781-1802 (2005)
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 60701 for net-linux-x86_64-iccstatic
+Info: Built Wed Dec 21 11:36:45 CST 2016 by jim on harare.ks.uiuc.edu
+Info: 1 NAMD  2.12  Linux-x86_64  1    linux-06  wolfeg2
+Info: Running on 1 processors, 1 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 0.00326014 s
+Info: 40.8984 MB of memory in use based on /proc/self/stat
+Info: Configuration file is namd-temp.namd
+Info: Working in the current directory /home/wolfeg2/474/promute/build/external/em
+TCL: Suspending until startup complete.
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               1
+Info: NUMBER OF STEPS        0
+Info: STEPS PER CYCLE        20
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             4000 steps
+Info: FIRST LDB TIMESTEP     100
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: MIN ATOMS PER PATCH    40
+Info: INITIAL TEMPERATURE    0
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 1
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: NO DCD TRAJECTORY OUTPUT
+Info: NO EXTENDED SYSTEM TRAJECTORY OUTPUT
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        out
+Info: RESTART FILENAME       decoy_tmp
+Info: RESTART FREQUENCY      500
+Info: SWITCHING ACTIVE
+Info: SWITCHING ON           10
+Info: SWITCHING OFF          12
+Info: PAIRLIST DISTANCE      12
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 0
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        14.5
+Info: ENERGY OUTPUT STEPS    500
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    5000
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: RANDOM NUMBER SEED     1591665555
+Info: USE HYDROGEN BONDS?    NO
+Info: COORDINATE PDB         6Y2E.A26W_autopsf.pdb
+Info: STRUCTURE FILE         6Y2E.A26W_autopsf.psf
+Info: PARAMETER file: CHARMM format! 
+Info: PARAMETERS             minimization/scripts/par_all27_prot_lipid_na.inp
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+
+Warning: DUPLICATE ANGLE ENTRY FOR CPH1-NR1-CPH2
+PREVIOUS VALUES  k=130  theta0=107.5 k_ub=0 r_ub=0
+   USING VALUES  k=130  theta0=107 k_ub=0 r_ub=0
+Info: SUMMARY OF PARAMETERS:
+Info: 307 BONDS
+Info: 769 ANGLES
+Info: 1254 DIHEDRAL
+Info: 81 IMPROPER
+Info: 6 CROSSTERM
+Info: 190 VDW
+Info: 0 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Info: TIME FOR READING PSF FILE: 0.136907
+Info: Reading pdb file 6Y2E.A26W_autopsf.pdb
+Info: TIME FOR READING PDB FILE: 0.00549984
+Info: 
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 4692 ATOMS
+Info: 4747 BONDS
+Info: 8542 ANGLES
+Info: 12508 DIHEDRALS
+Info: 830 IMPROPERS
+Info: 304 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 14073 DEGREES OF FREEDOM
+Info: 2375 HYDROGEN GROUPS
+Info: 4 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 2375 MIGRATION GROUPS
+Info: 4 ATOMS IN LARGEST MIGRATION GROUP
+Info: TOTAL MASS = 33877.8 amu
+Info: TOTAL CHARGE = -4 e
+Info: *****************************
+Info: 
+Info: Entering startup at 0.168063 s, 53.125 MB of memory in use
+Info: Startup phase 0 took 0.030407 s, 53.125 MB of memory in use
+Info: ADDED 25581 IMPLICIT EXCLUSIONS
+Info: Startup phase 1 took 0.038096 s, 55.0078 MB of memory in use
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: ABSOLUTE IMPRECISION IN FAST TABLE ENERGY: 2.53117e-21 AT 11.9974
+Info: RELATIVE IMPRECISION IN FAST TABLE ENERGY: 1.68907e-16 AT 11.9974
+Info: INCONSISTENCY IN FAST TABLE ENERGY VS FORCE: 0.000290274 AT 0.251946
+Info: ABSOLUTE IMPRECISION IN VDWA TABLE ENERGY: 4.59334e-32 AT 11.9974
+Info: RELATIVE IMPRECISION IN VDWA TABLE ENERGY: 7.4108e-17 AT 11.9974
+Info: INCONSISTENCY IN VDWA TABLE ENERGY VS FORCE: 0.0040507 AT 0.251946
+Info: ABSOLUTE IMPRECISION IN VDWB TABLE ENERGY: 1.53481e-26 AT 11.9974
+Info: RELATIVE IMPRECISION IN VDWB TABLE ENERGY: 7.96691e-18 AT 11.9974
+Info: INCONSISTENCY IN VDWB TABLE ENERGY VS FORCE: 0.00150189 AT 0.251946
+Info: Startup phase 2 took 0.0328081 s, 56.3789 MB of memory in use
+Info: Startup phase 3 took 0.030443 s, 56.3789 MB of memory in use
+Info: Startup phase 4 took 0.030401 s, 56.3789 MB of memory in use
+Info: Startup phase 5 took 0.0304251 s, 56.3789 MB of memory in use
+Info: ORIGINAL ATOMS MINMAX IS -35.169 -58.902 -15.178  2.526 6.069 46.755
+Info: ADJUSTED ATOMS MINMAX IS -28.3931 -51.2554 -6.92262  -4.35188 0.208375 41.1536
+Info: PATCH GRID IS 2 BY 4 BY 4
+Info: PATCH GRID IS 1-AWAY BY 1-AWAY BY 1-AWAY
+Info: REMOVING COM VELOCITY 0 0 0
+Info: LARGEST PATCH (11) HAS 307 ATOMS
+Info: TORUS A SIZE 1 USING 0
+Info: TORUS B SIZE 1 USING 0
+Info: TORUS C SIZE 1 USING 0
+Info: TORUS MINIMAL MESH SIZE IS 1 BY 1 BY 1
+Info: Placed 100% of base nodes on same physical node as patch
+Info: Startup phase 6 took 0.03566 s, 57.1211 MB of memory in use
+Info: Startup phase 7 took 0.0304039 s, 57.1211 MB of memory in use
+Info: Startup phase 8 took 0.0304091 s, 57.1211 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 9 took 0.030458 s, 57.1211 MB of memory in use
+Info: CREATING 381 COMPUTE OBJECTS
+Info: Startup phase 10 took 0.032197 s, 58.0234 MB of memory in use
+Info: Startup phase 11 took 0.030369 s, 58.0234 MB of memory in use
+Info: Startup phase 12 took 0.000361919 s, 62.2734 MB of memory in use
+Info: Finished startup at 0.550502 s, 62.2734 MB of memory in use
+
+TCL: Minimizing for 500 steps
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:       0      2325.4766      2054.5249      1013.3292        32.4535          -4546.8633       808.1667         0.0000         0.0000         0.0000           1687.0876         0.0000      1687.0876      1687.0876         0.0000
+
+MINIMIZER SLOWLY MOVING 2 ATOMS WITH BAD CONTACTS DOWNHILL
+ENERGY:       1      2327.9995      2056.3536      1013.5209        32.4535          -4547.0297       501.9098         0.0000         0.0000         0.0000           1385.2078         0.0000      1385.2078      1385.2078         0.0000
+
+MINIMIZER STARTING CONJUGATE GRADIENT ALGORITHM
+LINE MINIMIZER REDUCING GRADIENT FROM 2.2876e+07 TO 22876
+ENERGY:       2      2065.6568      2014.5346      1011.7350        30.7680          -4558.2474       112.3205         0.0000         0.0000         0.0000            676.7676         0.0000       676.7676       676.7676         0.0000
+
+ENERGY:       3      1833.4651      1980.2077      1010.2242        29.3048          -4569.5909       -72.2596         0.0000         0.0000         0.0000            211.3513         0.0000       211.3513       211.3513         0.0000
+
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM DUE TO POOR PROGRESS
+LINE MINIMIZER REDUCING GRADIENT FROM 7.26413e+06 TO 7264.13
+ENERGY:       4       952.3939      1840.4214      1001.9029        24.3954          -4633.0369      -425.4787         0.0000         0.0000         0.0000          -1239.4020         0.0000     -1239.4020     -1239.4020         0.0000
+
+ENERGY:       5       726.8955      1823.0717       996.9521        25.2424          -4696.9978      -628.2338         0.0000         0.0000         0.0000          -1753.0701         0.0000     -1753.0701     -1753.0701         0.0000
+
+ENERGY:       6      1161.2509      1925.9181       995.4052        31.7496          -4761.2711      -757.7129         0.0000         0.0000         0.0000          -1404.6602         0.0000     -1404.6602     -1404.6602         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000273787 0.000273787 DU -513.668 348.41 DUDX -3.51857e+06 -275127 2.8035e+06 
+ENERGY:       7       740.5798      1827.9756       996.6441        25.6399          -4703.4135      -643.7413         0.0000         0.0000         0.0000          -1756.3154         0.0000     -1756.3154     -1756.3154         0.0000
+
+LINE MINIMIZER BRACKET: DX 2.73787e-05 0.000246408 DU -3.24536 351.655 DUDX -275127 37811.5 2.8035e+06 
+ENERGY:       8       738.5742      1827.3188       996.6795        25.5889          -4702.6376      -641.9018         0.0000         0.0000         0.0000          -1756.3781         0.0000     -1756.3781     -1756.3781         0.0000
+
+LINE MINIMIZER BRACKET: DX 2.4068e-05 3.31067e-06 DU -3.30803 0.0626748 DUDX -275127 47.3766 37811.5 
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM
+LINE MINIMIZER REDUCING GRADIENT FROM 1.64842e+06 TO 1648.42
+ENERGY:       9       437.4506      1565.3795       992.9189        25.0544          -4657.4238      -691.5445         0.0000         0.0000         0.0000          -2328.1649         0.0000     -2328.1649     -2328.1649         0.0000
+
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:      10       923.3742      1538.6300       992.5460        29.5451          -4615.5829      -711.2507         0.0000         0.0000         0.0000          -1842.7382         0.0000     -1842.7382     -1842.7382         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000667256 0.000667256 DU -571.787 485.427 DUDX -1.64842e+06 -65479.6 1.52248e+06 
+ENERGY:      11       450.5994      1552.1144       992.7255        25.2662          -4653.0809      -694.8753         0.0000         0.0000         0.0000          -2327.2507         0.0000     -2327.2507     -2327.2507         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000667256 6.67256e-05 DU -571.787 0.914133 DUDX -1.64842e+06 -65479.6 92887 
+ENERGY:      12       441.9330      1559.6093       992.8349        25.1359          -4655.6240      -692.9573         0.0000         0.0000         0.0000          -2329.0682         0.0000     -2329.0682     -2329.0682         0.0000
+
+LINE MINIMIZER BRACKET: DX 2.75903e-05 3.91354e-05 DU -0.90335 1.81748 DUDX -65479.6 -2.37409 92887 
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM
+LINE MINIMIZER REDUCING GRADIENT FROM 1.05733e+06 TO 1057.33
+ENERGY:      13       648.0762      1442.0287       992.8702        27.4565          -4735.4972      -848.4751         0.0000         0.0000         0.0000          -2473.5407         0.0000     -2473.5407     -2473.5407         0.0000
+
+ENERGY:      14      2275.9601      1607.7787       997.5354        32.9362          -4813.9660      -960.5437         0.0000         0.0000         0.0000           -860.2993         0.0000      -860.2993      -860.2993         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000974207 0.000974207 DU -144.472 1613.24 DUDX -1.05733e+06 756648 2.55334e+06 
+ENERGY:      15       389.5218      1456.2328       992.3058        26.0773          -4702.2834      -789.8381         0.0000         0.0000         0.0000          -2627.9837         0.0000     -2627.9837     -2627.9837         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000566927 0.00040728 DU -298.915 154.443 DUDX -1.05733e+06 1203.21 756648 
+ENERGY:      16       373.1939      1462.1700       992.2906        25.9307          -4697.6400      -781.0085         0.0000         0.0000         0.0000          -2625.0633         0.0000     -2625.0633     -2625.0633         0.0000
+
+LINE MINIMIZER BRACKET: DX 5.66927e-05 0.00040728 DU -2.92035 154.443 DUDX -104240 1203.21 756648 
+ENERGY:      17       387.6730      1456.7828       992.3036        26.0622          -4701.8192      -788.9629         0.0000         0.0000         0.0000          -2627.9606         0.0000     -2627.9606     -2627.9606         0.0000
+
+LINE MINIMIZER BRACKET: DX 5.66927e-06 0.00040728 DU -0.0230577 154.443 DUDX -9337.63 1203.21 756648 
+ENERGY:      18       389.3083      1456.2951       992.3055        26.0756          -4702.2304      -789.7383         0.0000         0.0000         0.0000          -2627.9841         0.0000     -2627.9841     -2627.9841         0.0000
+
+LINE MINIMIZER BRACKET: DX 5.02213e-06 6.47143e-07 DU -0.0234471 0.000389334 DUDX -9337.63 0.0243738 1203.21 
+LINE MINIMIZER REDUCING GRADIENT FROM 612118 TO 612.118
+ENERGY:      19       306.0302      1313.0647       992.6570        30.6605          -4746.4492      -879.7946         0.0000         0.0000         0.0000          -2983.8315         0.0000     -2983.8315     -2983.8315         0.0000
+
+LDB: ============= START OF LOAD BALANCING ============== 1.09398
+LDB: ============== END OF LOAD BALANCING =============== 1.09403
+LDB: =============== DONE WITH MIGRATION ================ 1.12446
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:      20       291.3829      1229.9740       995.4906        37.9420          -4790.9529      -953.0413         0.0000         0.0000         0.0000          -3189.2047         0.0000     -3189.2047     -3189.2047         0.0000
+
+ENERGY:      21       349.5511      1208.3259      1000.6822        48.0620          -4835.7872     -1012.9018         0.0000         0.0000         0.0000          -3242.0677         0.0000     -3242.0677     -3242.0677         0.0000
+
+ENERGY:      22       486.1354      1248.9017      1008.1373        61.1767          -4881.0004     -1061.4994         0.0000         0.0000         0.0000          -3138.1487         0.0000     -3138.1487     -3138.1487         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000704335 0.000704335 DU -52.863 103.919 DUDX -184100 35015.8 261488 
+ENERGY:      23       335.2143      1207.6221       999.7027        46.2562          -4828.6316     -1004.1761         0.0000         0.0000         0.0000          -3244.0125         0.0000     -3244.0125     -3244.0125         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000592302 0.000112033 DU -54.8078 1.94477 DUDX -184100 -267.537 35015.8 
+LINE MINIMIZER REDUCING GRADIENT FROM 719970 TO 719.97
+ENERGY:      24       270.9543      1077.3733      1002.4734        47.9566          -4835.7589     -1046.2412         0.0000         0.0000         0.0000          -3483.2425         0.0000     -3483.2425     -3483.2425         0.0000
+
+ENERGY:      25       363.8174      1021.4915      1006.8508        50.7349          -4842.7566     -1078.9321         0.0000         0.0000         0.0000          -3478.7941         0.0000     -3478.7941     -3478.7941         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000501304 0.000501304 DU -239.23 4.44837 DUDX -719970 -234457 252749 
+ENERGY:      26       296.0955      1041.0025      1004.3879        49.1624          -4839.1468     -1063.0850         0.0000         0.0000         0.0000          -3511.5836         0.0000     -3511.5836     -3511.5836         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000241511 0.000259793 DU -28.3412 32.7895 DUDX -234457 -143.755 252749 
+LINE MINIMIZER REDUCING GRADIENT FROM 366809 TO 366.809
+ENERGY:      27       284.3699       949.5894      1002.2082        44.3396          -4927.4903     -1110.9176         0.0000         0.0000         0.0000          -3757.9009         0.0000     -3757.9009     -3757.9009         0.0000
+
+ENERGY:      28       349.8540       929.4744      1002.2444        43.6129          -5016.2027     -1147.4406         0.0000         0.0000         0.0000          -3838.4575         0.0000     -3838.4575     -3838.4575         0.0000
+
+ENERGY:      29       497.9821       985.9006      1004.4648        46.9523          -5105.2274     -1174.2956         0.0000         0.0000         0.0000          -3744.2233         0.0000     -3744.2233     -3744.2233         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000892705 0.000892705 DU -80.5565 94.2342 DUDX -184345 5597.02 207852 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:      30       339.7172       928.1079      1002.1437        43.5021          -5007.3165     -1144.2407         0.0000         0.0000         0.0000          -3838.0863         0.0000     -3838.0863     -3838.0863         0.0000
+
+LINE MINIMIZER BRACKET: DX 8.92705e-05 0.000892705 DU -0.371139 94.2342 DUDX -13891.4 5597.02 207852 
+ENERGY:      31       346.8620       929.0041      1002.2133        43.5770          -5013.6530     -1146.5324         0.0000         0.0000         0.0000          -3838.5290         0.0000     -3838.5290     -3838.5290         0.0000
+
+LINE MINIMIZER BRACKET: DX 6.36593e-05 2.56112e-05 DU -0.442704 0.0715655 DUDX -13891.4 -6.71845 5597.02 
+LINE MINIMIZER REDUCING GRADIENT FROM 337532 TO 337.532
+ENERGY:      32       324.2024       932.1451       996.5280        45.6820          -5074.3097     -1182.4849         0.0000         0.0000         0.0000          -3958.2370         0.0000     -3958.2370     -3958.2370         0.0000
+
+ENERGY:      33       499.2447      1027.2445       992.4784        50.1624          -5135.2213     -1209.9321         0.0000         0.0000         0.0000          -3776.0234         0.0000     -3776.0234     -3776.0234         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000795497 0.000795497 DU -119.708 182.214 DUDX -337532 37812.1 422009 
+ENERGY:      34       317.6116       927.7352       997.0222        45.3698          -5068.2078     -1179.2683         0.0000         0.0000         0.0000          -3959.7374         0.0000     -3959.7374     -3959.7374         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000715624 7.98736e-05 DU -121.208 1.50037 DUDX -337532 -228.921 37812.1 
+LINE MINIMIZER REDUCING GRADIENT FROM 199895 TO 199.895
+ENERGY:      35       293.2315       880.9763       987.5097        45.6954          -5094.7185     -1193.4318         0.0000         0.0000         0.0000          -4080.7375         0.0000     -4080.7375     -4080.7375         0.0000
+
+ENERGY:      36       355.6196       893.1777       980.6345        47.7786          -5121.1766     -1201.8539         0.0000         0.0000         0.0000          -4045.8200         0.0000     -4045.8200     -4045.8200         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000998224 0.000998224 DU -121 34.9175 DUDX -199895 -42876 112689 
+ENERGY:      37       301.8233       878.4348       985.3460        46.0937          -5102.0094     -1196.3087         0.0000         0.0000         0.0000          -4086.6204         0.0000     -4086.6204     -4086.6204         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000274867 0.000723357 DU -5.88283 40.8003 DUDX -42876 54.9289 112689 
+LINE MINIMIZER REDUCING GRADIENT FROM 191157 TO 191.157
+ENERGY:      38       291.6342       841.8636       977.9740        45.0017          -5139.9251     -1198.7726         0.0000         0.0000         0.0000          -4182.2242         0.0000     -4182.2242     -4182.2242         0.0000
+
+ENERGY:      39       364.0040       868.6201       973.6363        46.2994          -5177.9000     -1194.8818         0.0000         0.0000         0.0000          -4120.2219         0.0000     -4120.2219     -4120.2219         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00091007 0.00091007 DU -95.6038 62.0023 DUDX -191157 -18798.5 155570 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:      40       295.4590       841.6874       977.3579        45.0269          -5144.0283     -1198.6562         0.0000         0.0000         0.0000          -4183.1533         0.0000     -4183.1533     -4183.1533         0.0000
+
+LINE MINIMIZER BRACKET: DX 9.84034e-05 0.000811667 DU -0.929076 62.9314 DUDX -18798.5 -80.2946 155570 
+LINE MINIMIZER REDUCING GRADIENT FROM 159169 TO 159.169
+ENERGY:      41       261.5717       828.6012       972.7428        42.9954          -5165.8310     -1209.4325         0.0000         0.0000         0.0000          -4269.3523         0.0000     -4269.3523     -4269.3523         0.0000
+
+ENERGY:      42       314.8822       865.2208       970.5376        42.8263          -5187.5939     -1214.3118         0.0000         0.0000         0.0000          -4208.4387         0.0000     -4208.4387     -4208.4387         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000994782 0.000994782 DU -86.1991 60.9137 DUDX -159169 -13510.2 136904 
+ENERGY:      43       262.8873       830.0330       972.4189        42.8957          -5168.0088     -1210.1868         0.0000         0.0000         0.0000          -4269.9607         0.0000     -4269.9607     -4269.9607         0.0000
+
+LINE MINIMIZER BRACKET: DX 9.94782e-05 0.000895304 DU -0.608337 61.522 DUDX -13510.2 1287.96 136904 
+ENERGY:      44       262.7164       829.8674       972.4502        42.9049          -5167.7911     -1210.1140         0.0000         0.0000         0.0000          -4269.9661         0.0000     -4269.9661     -4269.9661         0.0000
+
+LINE MINIMIZER BRACKET: DX 8.95304e-05 9.94782e-06 DU -0.613777 0.00544028 DUDX -13510.2 -194.109 1287.96 
+ENERGY:      45       262.7383       829.8888       972.4461        42.9036          -5167.8196     -1210.1236         0.0000         0.0000         0.0000          -4269.9662         0.0000     -4269.9662     -4269.9662         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.30296e-06 8.64487e-06 DU -0.00012647 0.00556675 DUDX -194.109 -0.0175391 1287.96 
+LINE MINIMIZER REDUCING GRADIENT FROM 139933 TO 139.933
+ENERGY:      46       240.9396       829.5652       969.4285        40.9738          -5193.0821     -1228.1547         0.0000         0.0000         0.0000          -4340.3297         0.0000     -4340.3297     -4340.3297         0.0000
+
+ENERGY:      47       299.4971       894.0919       968.9815        40.9159          -5218.3190     -1239.9341         0.0000         0.0000         0.0000          -4254.7667         0.0000     -4254.7667     -4254.7667         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00106129 0.00106129 DU -70.3634 85.563 DUDX -139933 7133.35 154354 
+ENERGY:      48       239.4819       826.6987       969.6156        41.0831          -5190.5574     -1226.6303         0.0000         0.0000         0.0000          -4340.3083         0.0000     -4340.3083     -4340.3083         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000106129 0.00106129 DU -0.0213969 85.563 DUDX -7536.47 7133.35 154354 
+ENERGY:      49       240.1306       828.0904       969.5163        41.0246          -5191.8545     -1227.4212         0.0000         0.0000         0.0000          -4340.5137         0.0000     -4340.5137     -4340.5137         0.0000
+
+LINE MINIMIZER BRACKET: DX 5.45228e-05 5.16057e-05 DU -0.205456 0.184059 DUDX -7536.47 -0.031345 7133.35 
+LINE MINIMIZER REDUCING GRADIENT FROM 109934 TO 109.934
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:      50       269.5876       804.1315       966.6667        38.4760          -5237.1478     -1243.6300         0.0000         0.0000         0.0000          -4401.9160         0.0000     -4401.9160     -4401.9160         0.0000
+
+ENERGY:      51       391.0183       830.5612       966.5689        38.2723          -5282.6006     -1253.2302         0.0000         0.0000         0.0000          -4309.4101         0.0000     -4309.4101     -4309.4101         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00125886 0.00125886 DU -61.4023 92.5059 DUDX -109934 12323.9 134772 
+ENERGY:      52       262.4300       804.2764       966.8295        38.6272          -5232.5735     -1242.2881         0.0000         0.0000         0.0000          -4402.6986         0.0000     -4402.6986     -4402.6986         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0011319 0.000126957 DU -62.1848 0.782547 DUDX -109934 4.01312 12323.9 
+LINE MINIMIZER REDUCING GRADIENT FROM 87069.2 TO 87.0692
+ENERGY:      53       260.1544       814.4522       964.8717        37.9128          -5274.3936     -1262.1366         0.0000         0.0000         0.0000          -4459.1390         0.0000     -4459.1390     -4459.1390         0.0000
+
+ENERGY:      54       319.8631       857.1074       964.9554        38.5523          -5316.2527     -1276.6158         0.0000         0.0000         0.0000          -4412.3903         0.0000     -4412.3903     -4412.3903         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00123855 0.00123855 DU -56.4404 46.7486 DUDX -87069.2 -4032.44 79726.2 
+ENERGY:      55       263.3254       817.2587       964.7864        37.9158          -5278.5772     -1263.8320         0.0000         0.0000         0.0000          -4459.1228         0.0000     -4459.1228     -4459.1228         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00123855 0.000123855 DU -56.4404 0.0161476 DUDX -87069.2 -4032.44 4294.48 
+ENERGY:      56       261.6129       815.7710       964.8279        37.9126          -5276.4198     -1262.9644         0.0000         0.0000         0.0000          -4459.2599         0.0000     -4459.2599     -4459.2599         0.0000
+
+LINE MINIMIZER BRACKET: DX 5.99879e-05 6.38669e-05 DU -0.120968 0.137115 DUDX -4032.44 -0.337839 4294.48 
+LINE MINIMIZER REDUCING GRADIENT FROM 107135 TO 107.135
+ENERGY:      57       250.4731       819.1998       963.1404        38.8683          -5305.1147     -1279.9860         0.0000         0.0000         0.0000          -4513.4192         0.0000     -4513.4192     -4513.4192         0.0000
+
+ENERGY:      58       279.8135       847.0663       963.0817        40.9936          -5334.1407     -1291.7228         0.0000         0.0000         0.0000          -4494.9084         0.0000     -4494.9084     -4494.9084         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000843315 0.000843315 DU -54.1592 18.5107 DUDX -107135 -21279.4 65447.6 
+ENERGY:      59       253.9227       823.7932       962.9733        39.2830          -5312.2252     -1283.3829         0.0000         0.0000         0.0000          -4515.6359         0.0000     -4515.6359     -4515.6359         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000207558 0.000635757 DU -2.21674 20.7275 DUDX -21279.4 -70.478 65447.6 
+LINE MINIMIZER REDUCING GRADIENT FROM 84981.5 TO 84.9815
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:      60       265.3132       812.0623       962.3009        39.9838          -5346.2130     -1294.1669         0.0000         0.0000         0.0000          -4560.7197         0.0000     -4560.7197     -4560.7197         0.0000
+
+ENERGY:      61       314.2479       823.7457       963.1368        41.8776          -5380.6992     -1299.0938         0.0000         0.0000         0.0000          -4536.7850         0.0000     -4536.7850     -4536.7850         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000931499 0.000931499 DU -45.0838 23.9347 DUDX -84981.5 -11649.8 63493 
+ENERGY:      62       270.4565       812.3469       962.3311        40.2011          -5351.5571     -1295.3517         0.0000         0.0000         0.0000          -4561.5733         0.0000     -4561.5733     -4561.5733         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000145293 0.000786206 DU -0.853597 24.7883 DUDX -11649.8 -92.5854 63493 
+ENERGY:      63       273.6208       812.7383       962.3628        40.3307          -5354.4540     -1295.9326         0.0000         0.0000         0.0000          -4561.3341         0.0000     -4561.3341     -4561.3341         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000145293 7.86206e-05 DU -0.853597 0.239252 DUDX -11649.8 -92.5854 6181.31 
+ENERGY:      64       270.7608       812.3785       962.3338        40.2136          -5351.8466     -1295.4117         0.0000         0.0000         0.0000          -4561.5716         0.0000     -4561.5716     -4561.5716         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000145293 7.86206e-06 DU -0.853597 0.00173567 DUDX -11649.8 -92.5854 534.139 
+ENERGY:      65       270.5013       812.3514       962.3315        40.2029          -5351.5999     -1295.3606         0.0000         0.0000         0.0000          -4561.5734         0.0000     -4561.5734     -4561.5734         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.1615e-06 6.70056e-06 DU -5.37724e-05 0.00178944 DUDX -92.5854 -0.005512 534.139 
+LINE MINIMIZER REDUCING GRADIENT FROM 72582 TO 72.582
+ENERGY:      66       270.4988       806.9057       962.8194        40.7345          -5379.6339     -1300.5278         0.0000         0.0000         0.0000          -4599.2033         0.0000     -4599.2033     -4599.2033         0.0000
+
+ENERGY:      67       313.6640       827.1426       964.8516        42.5125          -5408.0411     -1298.6066         0.0000         0.0000         0.0000          -4558.4769         0.0000     -4558.4769     -4558.4769         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0010521 0.0010521 DU -37.6299 40.7264 DUDX -72582 1181.74 76723.8 
+ENERGY:      68       268.5504       806.2963       962.7023        40.6252          -5376.8150     -1300.2963         0.0000         0.0000         0.0000          -4598.9371         0.0000     -4598.9371     -4598.9371         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00010521 0.0010521 DU -0.266259 40.7264 DUDX -6240.59 1181.74 76723.8 
+ENERGY:      69       270.1598       806.7915       962.7997        40.7163          -5379.1850     -1300.4955         0.0000         0.0000         0.0000          -4599.2132         0.0000     -4599.2132     -4599.2132         0.0000
+
+LINE MINIMIZER BRACKET: DX 8.84648e-05 1.67449e-05 DU -0.276147 0.00988804 DUDX -6240.59 -0.642139 1181.74 
+LINE MINIMIZER REDUCING GRADIENT FROM 54413.3 TO 54.4133
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:      70       267.1300       810.8792       962.3446        41.1463          -5406.3229     -1302.0879         0.0000         0.0000         0.0000          -4626.9107         0.0000     -4626.9107     -4626.9107         0.0000
+
+ENERGY:      71       322.9138       852.8706       964.1570        43.7086          -5433.8555     -1293.1590         0.0000         0.0000         0.0000          -4543.3644         0.0000     -4543.3644     -4543.3644         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00150975 0.00150975 DU -27.6975 83.5463 DUDX -54413.3 17994.9 93484 
+ENERGY:      72       262.4417       806.3184       962.2476        40.8406          -5399.5714     -1302.5267         0.0000         0.0000         0.0000          -4630.2498         0.0000     -4630.2498     -4630.2498         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00113596 0.000373794 DU -31.0366 3.33914 DUDX -54413.3 -102.649 17994.9 
+ENERGY:      73       262.7490       806.6697       962.2511        40.8653          -5400.2455     -1302.5095         0.0000         0.0000         0.0000          -4630.2200         0.0000     -4630.2200     -4630.2200         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00113596 3.73794e-05 DU -31.0366 0.0298559 DUDX -54413.3 -102.649 1700.33 
+ENERGY:      74       262.4708       806.3524       962.2479        40.8430          -5399.6388     -1302.5253         0.0000         0.0000         0.0000          -4630.2499         0.0000     -4630.2499     -4630.2499         0.0000
+
+LINE MINIMIZER BRACKET: DX 3.73794e-06 3.36415e-05 DU -4.6844e-05 0.0299027 DUDX -102.649 77.5872 1700.33 
+LINE MINIMIZER REDUCING GRADIENT FROM 54402.8 TO 54.4028
+ENERGY:      75       284.1532       814.7770       959.6087        42.3685          -5448.3040     -1303.3475         0.0000         0.0000         0.0000          -4650.7442         0.0000     -4650.7442     -4650.7442         0.0000
+
+ENERGY:      76       376.5262       868.9443       960.0707        46.6749          -5497.0941     -1293.9577         0.0000         0.0000         0.0000          -4538.8358         0.0000     -4538.8358     -4538.8358         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00155741 0.00155741 DU -20.4943 111.908 DUDX -54402.8 28615.7 116051 
+ENERGY:      77       268.9493       806.7401       960.1752        41.5354          -5431.6238     -1304.0811         0.0000         0.0000         0.0000          -4658.3048         0.0000     -4658.3048     -4658.3048         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.001024 0.000533409 DU -28.0549 7.56065 DUDX -54402.8 -190.252 28615.7 
+ENERGY:      78       270.1015       807.3023       960.1024        41.6041          -5433.2912     -1304.0579         0.0000         0.0000         0.0000          -4658.2387         0.0000     -4658.2387     -4658.2387         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.001024 5.33409e-05 DU -28.0549 0.0661217 DUDX -54402.8 -190.252 2670.16 
+ENERGY:      79       269.0609       806.7939       960.1678        41.5421          -5431.7905     -1304.0793         0.0000         0.0000         0.0000          -4658.3051         0.0000     -4658.3051     -4658.3051         0.0000
+
+LINE MINIMIZER BRACKET: DX 5.33409e-06 4.80068e-05 DU -0.000252458 0.0663742 DUDX -190.252 95.6007 2670.16 
+LINE MINIMIZER REDUCING GRADIENT FROM 48311.8 TO 48.3118
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:      80       289.3632       813.2757       954.9965        43.0772          -5469.3461     -1308.0892         0.0000         0.0000         0.0000          -4676.7228         0.0000     -4676.7228     -4676.7228         0.0000
+
+ENERGY:      81       383.2686       864.5594       953.0817        47.2540          -5506.2115     -1304.9759         0.0000         0.0000         0.0000          -4563.0237         0.0000     -4563.0237     -4563.0237         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00173787 0.00173787 DU -18.4177 113.699 DUDX -48311.8 27190.3 104022 
+ENERGY:      82       273.6615       805.7670       956.4953        42.2231          -5455.9116     -1307.4407         0.0000         0.0000         0.0000          -4685.2053         0.0000     -4685.2053     -4685.2053         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00111263 0.000625237 DU -26.9002 8.48251 DUDX -48311.8 -34.4587 27190.3 
+LINE MINIMIZER REDUCING GRADIENT FROM 48174 TO 48.174
+ENERGY:      83       264.2904       834.6645       951.4698        42.9512          -5488.9104     -1317.6722         0.0000         0.0000         0.0000          -4713.2067         0.0000     -4713.2067     -4713.2067         0.0000
+
+ENERGY:      84       303.5048       897.3391       949.1968        46.2133          -5521.1165     -1321.6673         0.0000         0.0000         0.0000          -4646.5298         0.0000     -4646.5298     -4646.5298         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00155924 0.00155924 DU -28.0014 66.6769 DUDX -48174 12257.5 73550.1 
+ENERGY:      85       262.2863       826.0802       952.2713        42.5991          -5482.2803     -1316.0987         0.0000         0.0000         0.0000          -4715.1420         0.0000     -4715.1420     -4715.1420         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00124298 0.000316265 DU -29.9367 1.93528 DUDX -48174 -14.2391 12257.5 
+LINE MINIMIZER REDUCING GRADIENT FROM 51864.3 TO 51.8643
+ENERGY:      86       266.5402       840.3641       948.1815        42.7221          -5519.2555     -1324.0502         0.0000         0.0000         0.0000          -4745.4978         0.0000     -4745.4978     -4745.4978         0.0000
+
+ENERGY:      87       312.2827       881.9397       946.4599        44.7337          -5555.2795     -1327.1821         0.0000         0.0000         0.0000          -4697.0456         0.0000     -4697.0456     -4697.0456         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00133334 0.00133334 DU -30.3558 48.4522 DUDX -51864.3 6478.82 66660.2 
+ENERGY:      88       264.0616       837.4392       948.5204        42.6156          -5515.2067     -1323.4031         0.0000         0.0000         0.0000          -4745.9730         0.0000     -4745.9730     -4745.9730         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00118565 0.000147688 DU -30.831 0.475208 DUDX -51864.3 -39.9618 6478.82 
+LINE MINIMIZER REDUCING GRADIENT FROM 48878.9 TO 48.8789
+ENERGY:      89       288.6665       828.8611       945.6688        41.8940          -5546.0634     -1329.2959         0.0000         0.0000         0.0000          -4770.2689         0.0000     -4770.2689     -4770.2689         0.0000
+
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:      90       360.3366       848.1779       944.8909        42.7894          -5575.9831     -1330.6029         0.0000         0.0000         0.0000          -4710.3911         0.0000     -4710.3911     -4710.3911         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00134858 0.00134858 DU -24.2959 59.8777 DUDX -48878.9 12939.6 76264.4 
+ENERGY:      91       279.6809       828.3487       946.0995        41.9102          -5539.6913     -1328.4331         0.0000         0.0000         0.0000          -4772.0851         0.0000     -4772.0851     -4772.0851         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00106672 0.000281857 DU -26.1121 1.81623 DUDX -48878.9 -42.1602 12939.6 
+LINE MINIMIZER REDUCING GRADIENT FROM 45688.5 TO 45.6885
+ENERGY:      92       284.4381       837.9748       945.0241        42.2638          -5570.3157     -1335.6513         0.0000         0.0000         0.0000          -4796.2662         0.0000     -4796.2662     -4796.2662         0.0000
+
+ENERGY:      93       332.0220       874.8090       946.3962        45.1115          -5600.2611     -1337.9808         0.0000         0.0000         0.0000          -4739.9032         0.0000     -4739.9032     -4739.9032         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00140008 0.00140008 DU -24.1811 56.363 DUDX -45688.5 11240.4 69686 
+ENERGY:      94       280.1460       833.9315       945.0475        41.9958          -5564.3335     -1334.5977         0.0000         0.0000         0.0000          -4797.8104         0.0000     -4797.8104     -4797.8104         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0011241 0.000275983 DU -25.7253 1.5442 DUDX -45688.5 -41.2875 11240.4 
+LINE MINIMIZER REDUCING GRADIENT FROM 41091.5 TO 41.0915
+ENERGY:      95       284.3698       832.2657       944.6075        42.8200          -5580.9908     -1337.4525         0.0000         0.0000         0.0000          -4814.3804         0.0000     -4814.3804     -4814.3804         0.0000
+
+ENERGY:      96       339.5015       863.5914       946.9886        46.3839          -5597.0364     -1334.0958         0.0000         0.0000         0.0000          -4734.6669         0.0000     -4734.6669     -4734.6669         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00155252 0.00155252 DU -16.57 79.7135 DUDX -41091.5 19953.7 83290.7 
+ENERGY:      97       277.5226       829.1729       944.4466        42.2505          -5575.6326     -1337.1566         0.0000         0.0000         0.0000          -4819.3966         0.0000     -4819.3966     -4819.3966         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00104678 0.000505744 DU -21.5862 5.01611 DUDX -41091.5 -82.6108 19953.7 
+ENERGY:      98       277.9676       829.3244       944.4493        42.2944          -5576.1713     -1337.2147         0.0000         0.0000         0.0000          -4819.3503         0.0000     -4819.3503     -4819.3503         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00104678 5.05744e-05 DU -21.5862 0.0462556 DUDX -41091.5 -82.6108 1912.11 
+ENERGY:      99       277.5647       829.1865       944.4467        42.2548          -5575.6865     -1337.1627         0.0000         0.0000         0.0000          -4819.3965         0.0000     -4819.3965     -4819.3965         0.0000
+
+LDB: ============= START OF LOAD BALANCING ============== 2.71661
+LDB: ============== END OF LOAD BALANCING =============== 2.71665
+LDB: =============== DONE WITH MIGRATION ================ 2.89869
+LINE MINIMIZER BRACKET: DX 0.00104678 5.05744e-06 DU -21.5862 8.64054e-05 DUDX -41091.5 -82.6108 116.783 
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM
+LINE MINIMIZER REDUCING GRADIENT FROM 39917.8 TO 39.9178
+Info: Initial time: 1 CPUs 0.0207401 s/step 0.240047 days/ns 69.3633 MB memory
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     100       445.5852       843.7570       941.2750        42.2552          -5590.6215     -1331.5796         0.0000         0.0000         0.0000          -4649.3286         0.0000     -4649.3286     -4649.3286         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00305688 DU 0 170.068 DUDX -39917.8 -39917.8 151691 
+ENERGY:     101       279.5834       818.4013       943.5221        41.7193          -5578.8099     -1336.6100         0.0000         0.0000         0.0000          -4832.1938         0.0000     -4832.1938     -4832.1938         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00063852 0.00241836 DU -12.7973 182.865 DUDX -39917.8 -144.67 151691 
+ENERGY:     102       284.9318       816.1767       943.2080        41.5898          -5579.9923     -1336.3175         0.0000         0.0000         0.0000          -4830.4035         0.0000     -4830.4035     -4830.4035         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00063852 0.000241836 DU -12.7973 1.79028 DUDX -39917.8 -144.67 14953.5 
+ENERGY:     103       280.0051       818.1325       943.4898        41.7045          -5578.9282     -1336.5829         0.0000         0.0000         0.0000          -4832.1790         0.0000     -4832.1790     -4832.1790         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00063852 2.41836e-05 DU -12.7973 0.0147471 DUDX -39917.8 -144.67 1364.3 
+ENERGY:     104       279.6245       818.3739       943.5189        41.7178          -5578.8217     -1336.6073         0.0000         0.0000         0.0000          -4832.1940         0.0000     -4832.1940     -4832.1940         0.0000
+
+LINE MINIMIZER BRACKET: DX 2.41836e-06 2.17652e-05 DU -0.000167412 0.0149145 DUDX -144.67 6.21918 1364.3 
+LINE MINIMIZER REDUCING GRADIENT FROM 23304.2 TO 23.3042
+ENERGY:     105       328.1066       823.4025       939.5287        47.0035          -5571.7168     -1332.8678         0.0000         0.0000         0.0000          -4766.5433         0.0000     -4766.5433     -4766.5433         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00424256 DU 0 65.6506 DUDX -23304.2 -23304.2 54118.2 
+ENERGY:     106       276.8721       805.6489       941.6167        41.7808          -5576.6975     -1336.2312         0.0000         0.0000         0.0000          -4847.0103         0.0000     -4847.0103     -4847.0103         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0012748 0.00296776 DU -14.8163 80.4669 DUDX -23304.2 46.0167 54118.2 
+ENERGY:     107       276.4804       806.3644       941.7799        41.7162          -5576.9104     -1336.2980         0.0000         0.0000         0.0000          -4846.8675         0.0000     -4846.8675     -4846.8675         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00012748 0.00296776 DU -0.142734 80.4669 DUDX -2285.46 46.0167 54118.2 
+ENERGY:     108       276.8263       805.7149       941.6327        41.7738          -5576.7188     -1336.2382         0.0000         0.0000         0.0000          -4847.0094         0.0000     -4847.0094     -4847.0094         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.2748e-05 0.00296776 DU -0.000899233 80.4669 DUDX -187.096 46.0167 54118.2 
+ENERGY:     109       276.8629       805.6618       941.6199        41.7794          -5576.7017     -1336.2326         0.0000         0.0000         0.0000          -4847.0103         0.0000     -4847.0103     -4847.0103         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.02315e-05 2.51648e-06 DU -0.000957133 5.79005e-05 DUDX -187.096 0.000357369 46.0167 
+LINE MINIMIZER REDUCING GRADIENT FROM 27015.3 TO 27.0153
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     110       272.5687       832.4168       940.2533        44.9143          -5570.1626     -1336.5416         0.0000         0.0000         0.0000          -4816.5512         0.0000     -4816.5512     -4816.5512         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00281756 DU 0 30.4591 DUDX -27015.3 -27015.3 48721.2 
+ENERGY:     111       262.9337       804.6789       940.7314        42.4912          -5574.3909     -1337.0625         0.0000         0.0000         0.0000          -4860.6181         0.0000     -4860.6181     -4860.6181         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00100616 0.00181141 DU -13.6078 44.0669 DUDX -27015.3 -25.9048 48721.2 
+LINE MINIMIZER REDUCING GRADIENT FROM 19602.8 TO 19.6028
+ENERGY:     112       298.2227       794.0575       940.5406        42.3866          -5574.5423     -1333.7850         0.0000         0.0000         0.0000          -4833.1198         0.0000     -4833.1198     -4833.1198         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00324354 DU 0 27.4983 DUDX -19602.8 -19602.8 36544.6 
+ENERGY:     113       263.4854       793.6098       940.2851        42.0204          -5574.4675     -1336.6416         0.0000         0.0000         0.0000          -4871.7085         0.0000     -4871.7085     -4871.7085         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00113214 0.0021114 DU -11.0903 38.5886 DUDX -19602.8 6.91336 36544.6 
+LINE MINIMIZER REDUCING GRADIENT FROM 19349.3 TO 19.3493
+ENERGY:     114       301.8321       780.4663       940.1436        44.4266          -5577.1055     -1338.5516         0.0000         0.0000         0.0000          -4848.7884         0.0000     -4848.7884     -4848.7884         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00325307 DU 0 22.92 DUDX -19349.3 -19349.3 33540.5 
+ENERGY:     115       267.1124       781.7005       939.6563        41.8787          -5575.4588     -1338.1561         0.0000         0.0000         0.0000          -4883.2669         0.0000     -4883.2669     -4883.2669         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00119236 0.00206071 DU -11.5585 34.4785 DUDX -19349.3 -29.6339 33540.5 
+ENERGY:     116       268.9583       780.4721       939.6157        41.9749          -5575.6271     -1338.3222         0.0000         0.0000         0.0000          -4882.9284         0.0000     -4882.9284     -4882.9284         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00119236 0.000206071 DU -11.5585 0.338512 DUDX -19349.3 -29.6339 3315.38 
+ENERGY:     117       267.2808       781.5667       939.6514        41.8867          -5575.4757     -1338.1740         0.0000         0.0000         0.0000          -4883.2641         0.0000     -4883.2641     -4883.2641         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00119236 2.06071e-05 DU -11.5585 0.00283487 DUDX -19349.3 -29.6339 304.773 
+ENERGY:     118       267.1290       781.6870       939.6558        41.8795          -5575.4605     -1338.1579         0.0000         0.0000         0.0000          -4883.2669         0.0000     -4883.2669     -4883.2669         0.0000
+
+LINE MINIMIZER BRACKET: DX 2.06071e-06 1.85464e-05 DU -2.6612e-05 0.00286148 DUDX -29.6339 3.80584 304.773 
+LINE MINIMIZER REDUCING GRADIENT FROM 17188.3 TO 17.1883
+ENERGY:     119       283.2311       804.4854       937.0571        43.5987          -5575.7918     -1347.7367         0.0000         0.0000         0.0000          -4855.1562         0.0000     -4855.1562     -4855.1562         0.0000
+
+LDB: ============= START OF LOAD BALANCING ============== 3.29643
+LDB: ============== END OF LOAD BALANCING =============== 3.29647
+LDB: =============== DONE WITH MIGRATION ================ 3.32688
+LINE MINIMIZER BRACKET: DX 0 0.00346313 DU 0 28.1107 DUDX -17188.3 -17188.3 33524 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     120       260.8081       783.1419       938.4218        42.0342          -5575.5907     -1342.2105         0.0000         0.0000         0.0000          -4893.3952         0.0000     -4893.3952     -4893.3952         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00117614 0.00228699 DU -10.1283 38.239 DUDX -17188.3 -28.4855 33524 
+ENERGY:     121       260.9795       784.1766       938.2237        42.1160          -5575.6136     -1342.9019         0.0000         0.0000         0.0000          -4893.0196         0.0000     -4893.0196     -4893.0196         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00117614 0.000228699 DU -10.1283 0.375588 DUDX -17188.3 -28.4855 3313.4 
+ENERGY:     122       260.8047       783.2343       938.4014        42.0416          -5575.5930     -1342.2811         0.0000         0.0000         0.0000          -4893.3920         0.0000     -4893.3920     -4893.3920         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00117614 2.28699e-05 DU -10.1283 0.00316884 DUDX -17188.3 -28.4855 305.607 
+ENERGY:     123       260.8076       783.1510       938.4197        42.0349          -5575.5909     -1342.2176         0.0000         0.0000         0.0000          -4893.3952         0.0000     -4893.3952     -4893.3952         0.0000
+
+LINE MINIMIZER BRACKET: DX 2.28699e-06 2.0583e-05 DU -2.69438e-05 0.00319579 DUDX -28.4855 4.92285 305.607 
+LINE MINIMIZER REDUCING GRADIENT FROM 17093.6 TO 17.0936
+ENERGY:     124       278.5827       777.9331       933.1940        41.6970          -5569.8908     -1347.9365         0.0000         0.0000         0.0000          -4886.4204         0.0000     -4886.4204     -4886.4204         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.0028784 DU 0 6.97481 DUDX -17093.6 -17093.6 21941.7 
+ENERGY:     125       260.7649       776.4104       935.7891        41.4568          -5573.0639     -1345.5182         0.0000         0.0000         0.0000          -4904.1610         0.0000     -4904.1610     -4904.1610         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00126051 0.00161789 DU -10.7657 17.7405 DUDX -17093.6 2.2465 21941.7 
+LINE MINIMIZER REDUCING GRADIENT FROM 17680.9 TO 17.6809
+ENERGY:     126       287.2760       779.8850       932.2403        41.3493          -5586.9129     -1352.7138         0.0000         0.0000         0.0000          -4898.8762         0.0000     -4898.8762     -4898.8762         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.0023595 DU 0 5.2848 DUDX -17680.9 -17680.9 22163.8 
+ENERGY:     127       265.5218       774.5906       933.9559        41.0803          -5579.2026     -1349.3580         0.0000         0.0000         0.0000          -4913.4119         0.0000     -4913.4119     -4913.4119         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0010471 0.0013124 DU -9.25096 14.5358 DUDX -17680.9 1.62779 22163.8 
+LINE MINIMIZER REDUCING GRADIENT FROM 15796.6 TO 15.7966
+ENERGY:     128       265.4761       779.6826       930.3805        41.4329          -5580.7378     -1355.2143         0.0000         0.0000         0.0000          -4918.9800         0.0000     -4918.9800     -4918.9800         0.0000
+
+ENERGY:     129       300.7132       804.0484       928.4888        43.5418          -5582.4448     -1357.6706         0.0000         0.0000         0.0000          -4863.3231         0.0000     -4863.3231     -4863.3231         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00226545 0.00226545 DU -5.56805 55.6569 DUDX -15796.6 10931.9 38393.2 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     130       261.3274       775.2771       931.6424        41.0767          -5580.0907     -1353.2514         0.0000         0.0000         0.0000          -4924.0185         0.0000     -4924.0185     -4924.0185         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00134065 0.000924802 DU -10.6066 5.03855 DUDX -15796.6 -19.6255 10931.9 
+ENERGY:     131       261.4818       775.5732       931.5037        41.0992          -5580.1541     -1353.4737         0.0000         0.0000         0.0000          -4923.9699         0.0000     -4923.9699     -4923.9699         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00134065 9.24802e-05 DU -10.6066 0.0486386 DUDX -15796.6 -19.6255 1071.61 
+ENERGY:     132       261.3402       775.3052       931.6284        41.0789          -5580.0970     -1353.2739         0.0000         0.0000         0.0000          -4924.0182         0.0000     -4924.0182     -4924.0182         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00134065 9.24802e-06 DU -10.6066 0.000322947 DUDX -15796.6 -19.6255 89.4677 
+ENERGY:     133       261.3296       775.2821       931.6398        41.0771          -5580.0918     -1353.2555         0.0000         0.0000         0.0000          -4924.0185         0.0000     -4924.0185     -4924.0185         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.6637e-06 7.58432e-06 DU -1.63257e-05 0.000339272 DUDX -19.6255 -0.000290819 89.4677 
+LINE MINIMIZER REDUCING GRADIENT FROM 16916.8 TO 16.9168
+ENERGY:     134       261.4804       781.2054       928.8800        40.8453          -5589.4719     -1354.6525         0.0000         0.0000         0.0000          -4931.7133         0.0000     -4931.7133     -4931.7133         0.0000
+
+ENERGY:     135       290.8099       802.1173       927.5215        41.6446          -5598.8461     -1353.6688         0.0000         0.0000         0.0000          -4890.4216         0.0000     -4890.4216     -4890.4216         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00188323 0.00188323 DU -7.69479 41.2917 DUDX -16916.8 8790.89 35267.3 
+ENERGY:     136       258.2035       777.5054       929.6714        40.8087          -5586.2710     -1354.4461         0.0000         0.0000         0.0000          -4934.5281         0.0000     -4934.5281     -4934.5281         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0012404 0.000642833 DU -10.5096 2.81476 DUDX -16916.8 -21.5822 8790.89 
+ENERGY:     137       258.3801       777.7970       929.5851        40.8070          -5586.5911     -1354.4793         0.0000         0.0000         0.0000          -4934.5013         0.0000     -4934.5013     -4934.5013         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0012404 6.42833e-05 DU -10.5096 0.0268382 DUDX -16916.8 -21.5822 856.671 
+ENERGY:     138       258.2197       777.5337       929.6627        40.8085          -5586.3030     -1354.4496         0.0000         0.0000         0.0000          -4934.5280         0.0000     -4934.5280     -4934.5280         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0012404 6.42833e-06 DU -10.5096 0.000143467 DUDX -16916.8 -21.5822 66.219 
+ENERGY:     139       258.2074       777.5123       929.6693        40.8087          -5586.2789     -1354.4470         0.0000         0.0000         0.0000          -4934.5281         0.0000     -4934.5281     -4934.5281         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.58015e-06 4.84818e-06 DU -1.70518e-05 0.000160519 DUDX -21.5822 -0.000278544 66.219 
+LINE MINIMIZER REDUCING GRADIENT FROM 19014.8 TO 19.0148
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     140       262.3308       767.4295       927.4356        40.1664          -5592.8702     -1355.1089         0.0000         0.0000         0.0000          -4950.6166         0.0000     -4950.6166     -4950.6166         0.0000
+
+ENERGY:     141       281.8347       765.4183       926.3655        40.3797          -5599.3976     -1354.1263         0.0000         0.0000         0.0000          -4939.5257         0.0000     -4939.5257     -4939.5257         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00154388 0.00154388 DU -16.0885 11.0909 DUDX -19014.8 -1772.43 16385.9 
+ENERGY:     142       263.5674       766.8634       927.2750        40.1493          -5593.5256     -1355.0843         0.0000         0.0000         0.0000          -4950.7549         0.0000     -4950.7549     -4950.7549         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000154388 0.0013895 DU -0.138252 11.2292 DUDX -1772.43 -16.8854 16385.9 
+LINE MINIMIZER REDUCING GRADIENT FROM 25728.8 TO 25.7288
+ENERGY:     143       254.5527       773.7439       925.5271        40.9253          -5602.4973     -1356.8850         0.0000         0.0000         0.0000          -4964.6332         0.0000     -4964.6332     -4964.6332         0.0000
+
+ENERGY:     144       264.4956       788.8208       924.7750        42.2402          -5611.4354     -1357.3939         0.0000         0.0000         0.0000          -4948.4977         0.0000     -4948.4977     -4948.4977         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0011084 0.0011084 DU -13.8783 16.1355 DUDX -25728.8 783 28698.9 
+ENERGY:     145       254.6237       772.6891       925.6575        40.8235          -5601.6018     -1356.7628         0.0000         0.0000         0.0000          -4964.5709         0.0000     -4964.5709     -4964.5709         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00011084 0.0011084 DU -0.0622661 16.1355 DUDX -1904.32 783 28698.9 
+ENERGY:     146       254.5540       773.4284       925.5641        40.8951          -5602.2366     -1356.8508         0.0000         0.0000         0.0000          -4964.6458         0.0000     -4964.6458     -4964.6458         0.0000
+
+LINE MINIMIZER BRACKET: DX 7.85713e-05 3.22688e-05 DU -0.0748841 0.0126181 DUDX -1904.32 -0.740527 783 
+LINE MINIMIZER REDUCING GRADIENT FROM 26378.6 TO 26.3786
+ENERGY:     147       252.6071       772.0983       923.0039        41.3376          -5611.6698     -1358.8073         0.0000         0.0000         0.0000          -4981.4302         0.0000     -4981.4302     -4981.4302         0.0000
+
+ENERGY:     148       263.9798       777.6146       921.4505        42.4751          -5621.0538     -1359.5443         0.0000         0.0000         0.0000          -4975.0780         0.0000     -4975.0780     -4975.0780         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00107092 0.00107092 DU -16.7844 6.35216 DUDX -26378.6 -4998.57 17147.5 
+ENERGY:     149       254.0035       772.7530       922.5591        41.5366          -5613.8197     -1359.0845         0.0000         0.0000         0.0000          -4982.0520         0.0000     -4982.0520     -4982.0520         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000244877 0.00082604 DU -0.621816 6.97397 DUDX -4998.57 -71.2922 17147.5 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     150       254.6316       773.0547       922.4210        41.6119          -5614.5444     -1359.1636         0.0000         0.0000         0.0000          -4981.9887         0.0000     -4981.9887     -4981.9887         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000244877 8.2604e-05 DU -0.621816 0.0632531 DUDX -4998.57 -71.2922 1604.04 
+ENERGY:     151       254.0627       772.7813       922.5451        41.5440          -5613.8922     -1359.0927         0.0000         0.0000         0.0000          -4982.0519         0.0000     -4982.0519     -4982.0519         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000244877 8.2604e-06 DU -0.621816 0.000101598 DUDX -4998.57 -71.2922 95.9029 
+LINE MINIMIZER REDUCING GRADIENT FROM 29930.1 TO 29.9301
+ENERGY:     152       261.4119       770.3303       920.2961        41.7427          -5632.7517     -1358.2436         0.0000         0.0000         0.0000          -4997.2144         0.0000     -4997.2144     -4997.2144         0.0000
+
+ENERGY:     153       284.4862       776.5992       919.0127        42.4771          -5651.5420     -1356.1575         0.0000         0.0000         0.0000          -4985.1242         0.0000     -4985.1242     -4985.1242         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000948377 0.000948377 DU -15.1625 12.0902 DUDX -29930.1 -1927.22 27913.5 
+ENERGY:     154       262.9864       770.5622       920.1239        41.7920          -5634.6338     -1358.0922         0.0000         0.0000         0.0000          -4997.2615         0.0000     -4997.2615     -4997.2615         0.0000
+
+LINE MINIMIZER BRACKET: DX 9.48377e-05 0.000853539 DU -0.0471016 12.1373 DUDX -1927.22 937.173 27913.5 
+ENERGY:     155       262.4546       770.4768       920.1791        41.7753          -5634.0188     -1358.1431         0.0000         0.0000         0.0000          -4997.2760         0.0000     -4997.2760     -4997.2760         0.0000
+
+LINE MINIMIZER BRACKET: DX 6.3844e-05 3.09937e-05 DU -0.0616023 0.0145007 DUDX -1927.22 -1.10239 937.173 
+LINE MINIMIZER REDUCING GRADIENT FROM 24315.7 TO 24.3157
+ENERGY:     156       265.1222       769.6180       919.4021        41.4317          -5647.9185     -1360.3073         0.0000         0.0000         0.0000          -5012.6517         0.0000     -5012.6517     -5012.6517         0.0000
+
+ENERGY:     157       282.3830       776.5077       919.6520        41.7576          -5661.7177     -1361.0955         0.0000         0.0000         0.0000          -5002.5128         0.0000     -5002.5128     -5002.5128         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00115474 0.00115474 DU -15.3757 10.1389 DUDX -24315.7 -2368.52 20183 
+ENERGY:     158       266.2546       769.9812       919.3794        41.4345          -5649.3893     -1360.4596         0.0000         0.0000         0.0000          -5012.7992         0.0000     -5012.7992     -5012.7992         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00012266 0.00103208 DU -0.147435 10.2863 DUDX -2368.52 -34.1029 20183 
+ENERGY:     159       267.3341       770.3545       919.3692        41.4428          -5650.6259     -1360.5757         0.0000         0.0000         0.0000          -5012.7010         0.0000     -5012.7010     -5012.7010         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00012266 0.000103208 DU -0.147435 0.0981396 DUDX -2368.52 -34.1029 1937.05 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     160       266.3574       770.0157       919.3780        41.4351          -5649.5130     -1360.4717         0.0000         0.0000         0.0000          -5012.7985         0.0000     -5012.7985     -5012.7985         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00012266 1.03208e-05 DU -0.147435 0.000663559 DUDX -2368.52 -34.1029 162.701 
+ENERGY:     161       266.2724       769.9871       919.3791        41.4346          -5649.4107     -1360.4617         0.0000         0.0000         0.0000          -5012.7992         0.0000     -5012.7992     -5012.7992         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.78852e-06 8.53225e-06 DU -3.04997e-05 0.000694059 DUDX -34.1029 -0.0027753 162.701 
+LINE MINIMIZER REDUCING GRADIENT FROM 26551.9 TO 26.5519
+ENERGY:     162       266.8996       771.9408       919.1669        41.1298          -5662.9644     -1363.7012         0.0000         0.0000         0.0000          -5027.5285         0.0000     -5027.5285     -5027.5285         0.0000
+
+ENERGY:     163       280.8590       781.9969       919.8565        41.4553          -5676.4247     -1365.2900         0.0000         0.0000         0.0000          -5017.5470         0.0000     -5017.5470     -5017.5470         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00100725 0.00100725 DU -14.7293 9.98151 DUDX -26551.9 -2596.82 22799.1 
+ENERGY:     164       267.7110       772.6062       919.1962        41.1343          -5664.3662     -1363.9488         0.0000         0.0000         0.0000          -5027.6674         0.0000     -5027.6674     -5027.6674         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000104571 0.000902676 DU -0.138879 10.1204 DUDX -2596.82 -56.6191 22799.1 
+ENERGY:     165       268.5268       773.2508       919.2293        41.1436          -5665.5754     -1364.1480         0.0000         0.0000         0.0000          -5027.5730         0.0000     -5027.5730     -5027.5730         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000104571 9.02676e-05 DU -0.138879 0.0943837 DUDX -2596.82 -56.6191 2150.06 
+ENERGY:     166       267.7877       772.6677       919.1992        41.1350          -5664.4871     -1363.9693         0.0000         0.0000         0.0000          -5027.6669         0.0000     -5027.6669     -5027.6669         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000104571 9.02676e-06 DU -0.138879 0.000482066 DUDX -2596.82 -56.6191 163.449 
+ENERGY:     167       267.7306       772.6219       919.1969        41.1344          -5664.3973     -1363.9541         0.0000         0.0000         0.0000          -5027.6674         0.0000     -5027.6674     -5027.6674         0.0000
+
+LINE MINIMIZER BRACKET: DX 2.32263e-06 6.70413e-06 DU -6.57622e-05 0.000547828 DUDX -56.6191 -0.00682469 163.449 
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM
+LINE MINIMIZER REDUCING GRADIENT FROM 27345.3 TO 27.3453
+ENERGY:     168       447.6639       803.6634       917.0472        41.7792          -5675.3249     -1341.4399         0.0000         0.0000         0.0000          -4806.6111         0.0000     -4806.6111     -4806.6111         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00371346 DU 0 221.056 DUDX -27345.3 -27345.3 146117 
+ENERGY:     169       265.2005       766.7291       918.6120        40.7729          -5666.0671     -1360.8824         0.0000         0.0000         0.0000          -5035.6350         0.0000     -5035.6350     -5035.6350         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000584443 0.00312901 DU -7.96759 229.024 DUDX -27345.3 71.9399 146117 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     170       264.9381       767.1315       918.6663        40.8015          -5665.8993     -1361.1974         0.0000         0.0000         0.0000          -5035.5592         0.0000     -5035.5592     -5035.5592         0.0000
+
+LINE MINIMIZER BRACKET: DX 5.84443e-05 0.00312901 DU -0.0758512 229.024 DUDX -2667.69 71.9399 146117 
+ENERGY:     171       265.1691       766.7675       918.6173        40.7757          -5666.0503     -1360.9140         0.0000         0.0000         0.0000          -5035.6347         0.0000     -5035.6347     -5035.6347         0.0000
+
+LINE MINIMIZER BRACKET: DX 5.84443e-06 0.00312901 DU -0.000380069 229.024 DUDX -202.003 71.9399 146117 
+ENERGY:     172       265.1921       766.7391       918.6134        40.7737          -5666.0627     -1360.8907         0.0000         0.0000         0.0000          -5035.6351         0.0000     -5035.6351     -5035.6351         0.0000
+
+LINE MINIMIZER BRACKET: DX 4.30963e-06 1.53481e-06 DU -0.000435276 5.52072e-05 DUDX -202.003 0.00024306 71.9399 
+LINE MINIMIZER REDUCING GRADIENT FROM 14096.8 TO 14.0968
+ENERGY:     173       396.5236       828.5236       918.6580        53.0210          -5642.5679     -1339.0702         0.0000         0.0000         0.0000          -4784.9121         0.0000     -4784.9121     -4784.9121         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00804041 DU 0 250.723 DUDX -14096.8 -14096.8 76608.7 
+ENERGY:     174       260.1014       758.2209       917.4941        40.5626          -5662.3194     -1358.5417         0.0000         0.0000         0.0000          -5044.4821         0.0000     -5044.4821     -5044.4821         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0012516 0.00678881 DU -8.84697 259.57 DUDX -14096.8 -36.4051 76608.7 
+ENERGY:     175       261.2893       756.3686       917.0620        40.7759          -5660.3021     -1357.1089         0.0000         0.0000         0.0000          -5041.9151         0.0000     -5041.9151     -5041.9151         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0012516 0.000678881 DU -8.84697 2.56692 DUDX -14096.8 -36.4051 7599.75 
+ENERGY:     176       260.0953       757.9479       917.4453        40.5735          -5662.1172     -1358.4035         0.0000         0.0000         0.0000          -5044.4586         0.0000     -5044.4586     -5044.4586         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0012516 6.78881e-05 DU -8.84697 0.023438 DUDX -14096.8 -36.4051 726.907 
+ENERGY:     177       260.0996       758.1927       917.4892        40.5636          -5662.2991     -1358.5279         0.0000         0.0000         0.0000          -5044.4820         0.0000     -5044.4820     -5044.4820         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0012516 6.78881e-06 DU -8.84697 1.19405e-05 DUDX -14096.8 -36.4051 39.923 
+LINE MINIMIZER REDUCING GRADIENT FROM 15465.5 TO 15.4655
+ENERGY:     178       284.2029       835.5970       916.5778        44.5874          -5671.7578     -1355.2418         0.0000         0.0000         0.0000          -4946.0347         0.0000     -4946.0347     -4946.0347         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00513604 DU 0 98.4474 DUDX -15465.5 -15465.5 53923.7 
+ENERGY:     179       249.4918       762.7208       916.6642        40.9323          -5664.3264     -1358.8528         0.0000         0.0000         0.0000          -5053.3703         0.0000     -5053.3703     -5053.3703         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00114674 0.0039893 DU -8.88821 107.336 DUDX -15465.5 -31.8692 53923.7 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     180       247.9398       766.0257       916.4606        41.1320          -5665.0429     -1358.8261         0.0000         0.0000         0.0000          -5052.3109         0.0000     -5052.3109     -5052.3109         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00114674 0.00039893 DU -8.88821 1.05939 DUDX -15465.5 -31.8692 5343.64 
+ENERGY:     181       249.2868       763.0112       916.6419        40.9506          -5664.3978     -1358.8534         0.0000         0.0000         0.0000          -5053.3608         0.0000     -5053.3608     -5053.3608         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00114674 3.9893e-05 DU -8.88821 0.00944757 DUDX -15465.5 -31.8692 505.52 
+ENERGY:     182       249.4708       762.7494       916.6619        40.9341          -5664.3336     -1358.8529         0.0000         0.0000         0.0000          -5053.3703         0.0000     -5053.3703     -5053.3703         0.0000
+
+LINE MINIMIZER BRACKET: DX 3.9893e-06 3.59037e-05 DU -1.99485e-05 0.00946752 DUDX -31.8692 21.8683 505.52 
+LINE MINIMIZER REDUCING GRADIENT FROM 14941.5 TO 14.9415
+ENERGY:     183       298.4011       776.6509       913.3853        39.1594          -5695.8393     -1349.1908         0.0000         0.0000         0.0000          -5017.4335         0.0000     -5017.4335     -5017.4335         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00389878 DU 0 35.9368 DUDX -14941.5 -14941.5 33400.4 
+ENERGY:     184       253.5187       759.7699       915.1374        39.9826          -5674.0474     -1356.7400         0.0000         0.0000         0.0000          -5062.3789         0.0000     -5062.3789     -5062.3789         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00120563 0.00269314 DU -9.00857 44.9454 DUDX -14941.5 -3.77448 33400.4 
+LINE MINIMIZER REDUCING GRADIENT FROM 15336.5 TO 15.3365
+ENERGY:     185       287.2511       756.5256       911.4314        38.6305          -5692.7899     -1345.3477         0.0000         0.0000         0.0000          -5044.2989         0.0000     -5044.2989     -5044.2989         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00299839 DU 0 18.0799 DUDX -15336.5 -15336.5 27351 
+ENERGY:     186       257.4917       753.7235       913.3607        38.9564          -5680.7642     -1353.3836         0.0000         0.0000         0.0000          -5070.6155         0.0000     -5070.6155     -5070.6155         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0010761 0.00192229 DU -8.23661 26.3165 DUDX -15336.5 18.3689 27351 
+ENERGY:     187       256.6827       754.0815       913.5162        39.0317          -5680.0920     -1353.7551         0.0000         0.0000         0.0000          -5070.5350         0.0000     -5070.5350     -5070.5350         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00010761 0.00192229 DU -0.0804999 26.3165 DUDX -1514.59 18.3689 27351 
+ENERGY:     188       257.4067       753.7568       913.3760        38.9636          -5680.6969     -1353.4211         0.0000         0.0000         0.0000          -5070.6148         0.0000     -5070.6148     -5070.6148         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.0761e-05 0.00192229 DU -0.000627019 26.3165 DUDX -134.905 18.3689 27351 
+ENERGY:     189       257.4815       753.7275       913.3625        38.9572          -5680.7561     -1353.3881         0.0000         0.0000         0.0000          -5070.6155         0.0000     -5070.6155     -5070.6155         0.0000
+
+LINE MINIMIZER BRACKET: DX 9.47139e-06 1.28965e-06 DU -0.000638864 1.18449e-05 DUDX -134.905 0.0001508 18.3689 
+LINE MINIMIZER REDUCING GRADIENT FROM 13959.6 TO 13.9596
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     190       268.6853       782.9540       910.8529        39.9557          -5713.1529     -1353.7445         0.0000         0.0000         0.0000          -5064.4495         0.0000     -5064.4495     -5064.4495         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00268609 DU 0 6.16599 DUDX -13959.6 -13959.6 18722.7 
+ENERGY:     191       255.7927       763.1144       911.9815        39.1676          -5694.6462     -1354.1211         0.0000         0.0000         0.0000          -5078.7110         0.0000     -5078.7110     -5078.7110         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00115338 0.00153271 DU -8.09548 14.2615 DUDX -13959.6 -51.1484 18722.7 
+ENERGY:     192       256.2996       764.7203       911.8321        39.2203          -5696.4943     -1354.1541         0.0000         0.0000         0.0000          -5078.5762         0.0000     -5078.5762     -5078.5762         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00115338 0.000153271 DU -8.09548 0.13475 DUDX -13959.6 -51.1484 1810.03 
+ENERGY:     193       255.8357       763.2712       911.9662        39.1726          -5694.8310     -1354.1251         0.0000         0.0000         0.0000          -5078.7103         0.0000     -5078.7103     -5078.7103         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00115338 1.53271e-05 DU -8.09548 0.000641189 DUDX -13959.6 -51.1484 134.821 
+ENERGY:     194       255.8044       763.1575       911.9773        39.1690          -5694.6970     -1354.1222         0.0000         0.0000         0.0000          -5078.7111         0.0000     -5078.7111     -5078.7111         0.0000
+
+LINE MINIMIZER BRACKET: DX 4.21563e-06 1.11115e-05 DU -0.000107816 0.000749005 DUDX -51.1484 -0.0017656 134.821 
+LINE MINIMIZER REDUCING GRADIENT FROM 12308 TO 12.308
+ENERGY:     195       279.2326       767.7680       910.1593        40.2430          -5721.0023     -1354.4001         0.0000         0.0000         0.0000          -5077.9996         0.0000     -5077.9996     -5077.9996         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00257526 DU 0 0.711481 DUDX -12308 -12308 12951.1 
+ENERGY:     196       262.6831       762.8248       910.8273        39.5207          -5707.5671     -1354.7748         0.0000         0.0000         0.0000          -5086.4860         0.0000     -5086.4860     -5086.4860         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00125936 0.0013159 DU -7.77496 8.48644 DUDX -12308 -23.4131 12951.1 
+ENERGY:     197       263.9055       763.0760       910.7358        39.5766          -5708.9111     -1354.7870         0.0000         0.0000         0.0000          -5086.4043         0.0000     -5086.4043     -5086.4043         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00125936 0.00013159 DU -7.77496 0.0817729 DUDX -12308 -23.4131 1266.5 
+ENERGY:     198       262.8011       762.8474       910.8179        39.5261          -5707.7015     -1354.7765         0.0000         0.0000         0.0000          -5086.4855         0.0000     -5086.4855     -5086.4855         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00125936 1.3159e-05 DU -7.77496 0.000540162 DUDX -12308 -23.4131 105.513 
+ENERGY:     199       262.7045       762.8288       910.8256        39.5217          -5707.5915     -1354.7752         0.0000         0.0000         0.0000          -5086.4861         0.0000     -5086.4861     -5086.4861         0.0000
+
+LDB: ============= START OF LOAD BALANCING ============== 4.9018
+LDB: ============== END OF LOAD BALANCING =============== 4.90183
+LDB: =============== DONE WITH MIGRATION ================ 5.0536
+LINE MINIMIZER BRACKET: DX 2.38972e-06 1.07693e-05 DU -2.79762e-05 0.000568139 DUDX -23.4131 -0.000598074 105.513 
+LINE MINIMIZER REDUCING GRADIENT FROM 13035.9 TO 13.0359
+Info: Initial time: 1 CPUs 0.0197277 s/step 0.22833 days/ns 69.5 MB memory
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     200       269.3333       771.1800       910.0542        41.2981          -5728.4247     -1350.8554         0.0000         0.0000         0.0000          -5087.4145         0.0000     -5087.4145     -5087.4145         0.0000
+
+ENERGY:     201       307.2142       796.0282       911.0421        44.7078          -5749.0051     -1343.2028         0.0000         0.0000         0.0000          -5033.2156         0.0000     -5033.2156     -5033.2156         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00215938 0.00215938 DU -0.928421 54.1988 DUDX -13035.9 12229.9 38123.2 
+ENERGY:     202       262.2673       765.0910       910.2132        40.2363          -5718.3937     -1353.1892         0.0000         0.0000         0.0000          -5093.7750         0.0000     -5093.7750     -5093.7750         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00111636 0.00104302 DU -7.28892 6.3605 DUDX -13035.9 -14.8115 12229.9 
+ENERGY:     203       262.6486       765.5270       910.1792        40.3254          -5719.3994     -1352.9936         0.0000         0.0000         0.0000          -5093.7129         0.0000     -5093.7129     -5093.7129         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00111636 0.000104302 DU -7.28892 0.062062 DUDX -13035.9 -14.8115 1204.99 
+ENERGY:     204       262.3022       765.1329       910.2097        40.2450          -5718.4943     -1353.1701         0.0000         0.0000         0.0000          -5093.7745         0.0000     -5093.7745     -5093.7745         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00111636 1.04302e-05 DU -7.28892 0.000481461 DUDX -13035.9 -14.8115 107.133 
+ENERGY:     205       262.2715       765.0961       910.2128        40.2374          -5718.4059     -1353.1869         0.0000         0.0000         0.0000          -5093.7750         0.0000     -5093.7750     -5093.7750         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.26688e-06 9.16336e-06 DU -9.38235e-06 0.000490843 DUDX -14.8115 -0.000255915 107.133 
+LINE MINIMIZER REDUCING GRADIENT FROM 10966.4 TO 10.9664
+ENERGY:     206       265.8000       778.5658       910.0260        41.6375          -5734.5304     -1355.8018         0.0000         0.0000         0.0000          -5094.3030         0.0000     -5094.3030     -5094.3030         0.0000
+
+ENERGY:     207       299.3186       806.4570       911.3451        44.1253          -5750.2573     -1355.7008         0.0000         0.0000         0.0000          -5044.7122         0.0000     -5044.7122     -5044.7122         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00229943 0.00229943 DU -0.527968 49.5907 DUDX -10966.4 10567.1 32704.4 
+ENERGY:     208       260.3887       770.1749       909.9334        40.8164          -5726.6887     -1354.8531         0.0000         0.0000         0.0000          -5100.2285         0.0000     -5100.2285     -5100.2285         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00117417 0.00112527 DU -6.45348 5.92551 DUDX -10966.4 -15.8761 10567.1 
+ENERGY:     209       260.6108       770.8587       909.9266        40.8868          -5727.4771     -1354.9768         0.0000         0.0000         0.0000          -5100.1710         0.0000     -5100.1710     -5100.1710         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00117417 0.000112527 DU -6.45348 0.0574721 DUDX -10966.4 -15.8761 1037.51 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     210       260.4077       770.2417       909.9326        40.8233          -5726.7676     -1354.8658         0.0000         0.0000         0.0000          -5100.2281         0.0000     -5100.2281     -5100.2281         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00117417 1.12527e-05 DU -6.45348 0.000413785 DUDX -10966.4 -15.8761 89.422 
+ENERGY:     211       260.3915       770.1849       909.9333        40.8174          -5726.7006     -1354.8550         0.0000         0.0000         0.0000          -5100.2285         0.0000     -5100.2285     -5100.2285         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.69662e-06 9.55604e-06 DU -1.34681e-05 0.000427254 DUDX -15.8761 -0.00034607 89.422 
+LINE MINIMIZER REDUCING GRADIENT FROM 11284.4 TO 11.2844
+ENERGY:     212       267.0463       793.1173       910.4372        42.0277          -5754.2606     -1359.3346         0.0000         0.0000         0.0000          -5100.9665         0.0000     -5100.9665     -5100.9665         0.0000
+
+ENERGY:     213       301.3221       829.2925       912.4221        44.4225          -5781.4054     -1361.6260         0.0000         0.0000         0.0000          -5055.5723         0.0000     -5055.5723     -5055.5723         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00208418 0.00208418 DU -0.737993 45.3942 DUDX -11284.4 10622.1 33071.6 
+ENERGY:     214       260.4282       780.3693       910.0113        41.2949          -5740.9758     -1357.4357         0.0000         0.0000         0.0000          -5106.3077         0.0000     -5106.3077     -5106.3077         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00107571 0.00100847 DU -6.07926 5.34127 DUDX -11284.4 -12.7331 10622.1 
+ENERGY:     215       260.8025       781.5047       910.0384        41.3557          -5742.3086     -1357.6484         0.0000         0.0000         0.0000          -5106.2556         0.0000     -5106.2556     -5106.2556         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00107571 0.000100847 DU -6.07926 0.0521283 DUDX -11284.4 -12.7331 1046.67 
+ENERGY:     216       260.4628       780.4815       910.0139        41.3008          -5741.1091     -1357.4572         0.0000         0.0000         0.0000          -5106.3073         0.0000     -5106.3073     -5106.3073         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00107571 1.00847e-05 DU -6.07926 0.000405587 DUDX -11284.4 -12.7331 93.1702 
+ENERGY:     217       260.4324       780.3828       910.0116        41.2956          -5740.9918     -1357.4383         0.0000         0.0000         0.0000          -5106.3077         0.0000     -5106.3077     -5106.3077         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.21253e-06 8.87219e-06 DU -7.71975e-06 0.000413307 DUDX -12.7331 -0.000223894 93.1702 
+LINE MINIMIZER REDUCING GRADIENT FROM 9173.02 TO 9.17302
+ENERGY:     218       273.6815       783.8620       909.6857        41.3562          -5757.1708     -1357.6232         0.0000         0.0000         0.0000          -5106.2086         0.0000     -5106.2086     -5106.2086         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00244536 DU 0 0.0991707 DUDX -9173.02 -9173.02 9250.73 
+ENERGY:     219       263.9325       780.2417       909.6742        41.1674          -5749.1125     -1357.7903         0.0000         0.0000         0.0000          -5111.8870         0.0000     -5111.8870     -5111.8870         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0012173 0.00122806 DU -5.57924 5.67841 DUDX -9173.02 0.892949 9250.73 
+LINE MINIMIZER REDUCING GRADIENT FROM 8557.34 TO 8.55734
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     220       268.0218       802.8794       908.8162        41.6287          -5770.3378     -1360.3223         0.0000         0.0000         0.0000          -5109.3140         0.0000     -5109.3140     -5109.3140         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00256085 DU 0 2.57303 DUDX -8557.34 -8557.34 10604.9 
+ENERGY:     221       262.3696       788.3596       909.1083        41.2063          -5758.6716     -1359.1700         0.0000         0.0000         0.0000          -5116.7977         0.0000     -5116.7977     -5116.7977         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00114588 0.00141497 DU -4.91074 7.48377 DUDX -8557.34 -10.2322 10604.9 
+ENERGY:     222       262.5566       789.5881       909.0587        41.2299          -5759.8451     -1359.3126         0.0000         0.0000         0.0000          -5116.7244         0.0000     -5116.7244     -5116.7244         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00114588 0.000141497 DU -4.91074 0.0733567 DUDX -8557.34 -10.2322 1047.21 
+ENERGY:     223       262.3846       788.4802       909.1032        41.2085          -5758.7890     -1359.1845         0.0000         0.0000         0.0000          -5116.7971         0.0000     -5116.7971     -5116.7971         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00114588 1.41497e-05 DU -4.91074 0.000603121 DUDX -8557.34 -10.2322 95.482 
+ENERGY:     224       262.3711       788.3716       909.1078        41.2065          -5758.6833     -1359.1714         0.0000         0.0000         0.0000          -5116.7977         0.0000     -5116.7977     -5116.7977         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.41497e-06 1.27347e-05 DU -6.9993e-06 0.00061012 DUDX -10.2322 0.338929 95.482 
+LINE MINIMIZER REDUCING GRADIENT FROM 7886.65 TO 7.88665
+ENERGY:     225       267.7709       809.7849       907.5435        42.1092          -5778.4371     -1361.4250         0.0000         0.0000         0.0000          -5112.6537         0.0000     -5112.6537     -5112.6537         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00262125 DU 0 4.144 DUDX -7886.65 -7886.65 11078.7 
+ENERGY:     226       261.2690       795.1589       908.3007        41.4357          -5766.9648     -1360.3085         0.0000         0.0000         0.0000          -5121.1089         0.0000     -5121.1089     -5121.1089         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00109177 0.00152948 DU -4.3112 8.4552 DUDX -7886.65 -8.41903 11078.7 
+ENERGY:     227       261.4966       796.3519       908.2053        41.4846          -5768.1189     -1360.4452         0.0000         0.0000         0.0000          -5121.0257         0.0000     -5121.0257     -5121.0257         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00109177 0.000152948 DU -4.3112 0.0832346 DUDX -7886.65 -8.41903 1096.92 
+ENERGY:     228       261.2876       795.2755       908.2910        41.4404          -5767.0803     -1360.3224         0.0000         0.0000         0.0000          -5121.1082         0.0000     -5121.1082     -5121.1082         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00109177 1.52948e-05 DU -4.3112 0.000716334 DUDX -7886.65 -8.41903 102.09 
+ENERGY:     229       261.2709       795.1705       908.2997        41.4362          -5766.9764     -1360.3099         0.0000         0.0000         0.0000          -5121.1089         0.0000     -5121.1089     -5121.1089         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.52948e-06 1.37653e-05 DU -4.4258e-06 0.00072076 DUDX -8.41903 2.63167 102.09 
+LINE MINIMIZER REDUCING GRADIENT FROM 7879.24 TO 7.87924
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     230       276.1741       790.6073       906.6791        41.6282          -5775.6100     -1360.7985         0.0000         0.0000         0.0000          -5121.3199         0.0000     -5121.3199     -5121.3199         0.0000
+
+ENERGY:     231       310.9142       799.7284       906.0503        42.7931          -5783.8654     -1360.1614         0.0000         0.0000         0.0000          -5084.5408         0.0000     -5084.5408     -5084.5408         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00236522 0.00236522 DU -0.210927 36.779 DUDX -7879.24 7706.41 23436.7 
+ENERGY:     232       266.3507       791.1467       907.3580        41.4107          -5771.3892     -1360.6985         0.0000         0.0000         0.0000          -5125.8215         0.0000     -5125.8215     -5125.8215         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00119614 0.00116908 DU -4.71257 4.50164 DUDX -7879.24 -1.52389 7706.41 
+LINE MINIMIZER REDUCING GRADIENT FROM 8625.75 TO 8.62575
+ENERGY:     233       271.2070       797.6848       906.6546        41.6466          -5783.9857     -1362.0284         0.0000         0.0000         0.0000          -5128.8210         0.0000     -5128.8210     -5128.8210         0.0000
+
+ENERGY:     234       291.9789       813.8870       906.8414        42.7962          -5796.2072     -1362.5354         0.0000         0.0000         0.0000          -5103.2391         0.0000     -5103.2391     -5103.2391         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00198504 0.00198504 DU -2.99954 25.5819 DUDX -8625.75 5638.23 20201.1 
+ENERGY:     235       267.4150       793.9592       906.8270        41.4443          -5779.0630     -1361.6029         0.0000         0.0000         0.0000          -5131.0204         0.0000     -5131.0204     -5131.0204         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0012023 0.00078274 DU -5.1989 2.19936 DUDX -8625.75 -11.7984 5638.23 
+ENERGY:     236       267.6838       794.2643       906.8035        41.4582          -5779.5579     -1361.6512         0.0000         0.0000         0.0000          -5130.9993         0.0000     -5130.9993     -5130.9993         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0012023 7.8274e-05 DU -5.1989 0.0211179 DUDX -8625.75 -11.7984 551.448 
+ENERGY:     237       267.4408       793.9890       906.8246        41.4457          -5779.1125     -1361.6078         0.0000         0.0000         0.0000          -5131.0203         0.0000     -5131.0203     -5131.0203         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0012023 7.8274e-06 DU -5.1989 0.00012802 DUDX -8625.75 -11.7984 44.5097 
+ENERGY:     238       267.4204       793.9654       906.8265        41.4446          -5779.0734     -1361.6040         0.0000         0.0000         0.0000          -5131.0204         0.0000     -5131.0204     -5131.0204         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.64012e-06 6.18728e-06 DU -9.67556e-06 0.000137695 DUDX -11.7984 -0.000186583 44.5097 
+LINE MINIMIZER REDUCING GRADIENT FROM 9033.7 TO 9.0337
+ENERGY:     239       268.7702       802.1459       906.1960        41.1420          -5787.9077     -1365.2967         0.0000         0.0000         0.0000          -5134.9502         0.0000     -5134.9502     -5134.9502         0.0000
+
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     240       285.2353       816.9027       906.2382        41.3663          -5796.3611     -1368.3185         0.0000         0.0000         0.0000          -5114.9372         0.0000     -5114.9372     -5114.9372         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00175277 0.00175277 DU -3.92982 20.0131 DUDX -9033.7 4562.3 18312 
+ENERGY:     241       266.6447       798.6705       906.3333        41.1847          -5784.9877     -1364.1340         0.0000         0.0000         0.0000          -5136.2884         0.0000     -5136.2884     -5136.2884         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00116516 0.000587612 DU -5.26799 1.33816 DUDX -9033.7 -5.26795 4562.3 
+LINE MINIMIZER REDUCING GRADIENT FROM 11292.2 TO 11.2922
+ENERGY:     242       269.2519       797.8097       905.2273        40.5966          -5791.9736     -1367.4738         0.0000         0.0000         0.0000          -5146.5618         0.0000     -5146.5618     -5146.5618         0.0000
+
+ENERGY:     243       276.5765       800.1861       904.6021        40.3093          -5798.5660     -1370.3687         0.0000         0.0000         0.0000          -5147.2608         0.0000     -5147.2608     -5147.2608         0.0000
+
+ENERGY:     244       288.8148       805.8605       904.4654        40.3226          -5804.7441     -1372.8184         0.0000         0.0000         0.0000          -5138.0992         0.0000     -5138.0992     -5138.0992         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00133057 0.00133057 DU -0.698926 9.16155 DUDX -4144.05 3129.98 10704.8 
+ENERGY:     245       272.8550       798.7691       904.8104        40.3955          -5795.7931     -1369.1835         0.0000         0.0000         0.0000          -5148.1466         0.0000     -5148.1466     -5148.1466         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000760891 0.00056968 DU -1.58477 0.885848 DUDX -4144.05 -12.0004 3129.98 
+ENERGY:     246       273.1874       798.8837       904.7855        40.3844          -5796.0738     -1369.3057         0.0000         0.0000         0.0000          -5148.1384         0.0000     -5148.1384     -5148.1384         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000760891 5.6968e-05 DU -1.58477 0.00820062 DUDX -4144.05 -12.0004 299.973 
+ENERGY:     247       272.8879       798.7803       904.8078        40.3944          -5795.8212     -1369.1957         0.0000         0.0000         0.0000          -5148.1466         0.0000     -5148.1466     -5148.1466         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000760891 5.6968e-06 DU -1.58477 2.04448e-05 DUDX -4144.05 -12.0004 19.1787 
+LINE MINIMIZER REDUCING GRADIENT FROM 19594.2 TO 19.5942
+ENERGY:     248       272.8824       800.1703       903.4362        40.4557          -5804.8238     -1371.4446         0.0000         0.0000         0.0000          -5159.3237         0.0000     -5159.3237     -5159.3237         0.0000
+
+ENERGY:     249       279.8520       804.6121       902.4362        40.7027          -5813.4274     -1373.2286         0.0000         0.0000         0.0000          -5159.0530         0.0000     -5159.0530     -5159.0530         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000858266 0.000858266 DU -11.1771 0.270668 DUDX -19594.2 -6412.23 7119.47 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     250       275.3196       801.9028       902.9128        40.5502          -5808.9743     -1372.3536         0.0000         0.0000         0.0000          -5160.6424         0.0000     -5160.6424     -5160.6424         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000409017 0.00044925 DU -1.31869 1.58935 DUDX -6412.23 -20.1707 7119.47 
+ENERGY:     251       275.6848       802.1356       902.8605        40.5632          -5809.4245     -1372.4469         0.0000         0.0000         0.0000          -5160.6274         0.0000     -5160.6274     -5160.6274         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000409017 4.4925e-05 DU -1.31869 0.0149876 DUDX -6412.23 -20.1707 687.607 
+ENERGY:     252       275.3553       801.9257       902.9075        40.5515          -5809.0193     -1372.3629         0.0000         0.0000         0.0000          -5160.6423         0.0000     -5160.6423     -5160.6423         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000409017 4.4925e-06 DU -1.31869 6.82394e-05 DUDX -6412.23 -20.1707 50.5521 
+LINE MINIMIZER REDUCING GRADIENT FROM 22133 TO 22.133
+ENERGY:     253       270.7384       805.2444       901.9966        40.8713          -5814.2076     -1375.3036         0.0000         0.0000         0.0000          -5170.6604         0.0000     -5170.6604     -5170.6604         0.0000
+
+ENERGY:     254       273.8377       812.0828       901.4835        41.5023          -5819.0202     -1377.7793         0.0000         0.0000         0.0000          -5167.8933         0.0000     -5167.8933     -5167.8933         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00074116 0.00074116 DU -10.0181 2.76718 DUDX -22133 -4905.67 12405.7 
+ENERGY:     255       270.8328       806.8274       901.8103        41.0189          -5815.6122     -1376.0549         0.0000         0.0000         0.0000          -5171.1777         0.0000     -5171.1777     -5171.1777         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000210428 0.000530732 DU -0.517248 3.28443 DUDX -4905.67 -8.99266 12405.7 
+LINE MINIMIZER REDUCING GRADIENT FROM 15042.5 TO 15.0425
+ENERGY:     256       266.3254       807.2079       901.2827        41.4915          -5820.9914     -1376.4060         0.0000         0.0000         0.0000          -5181.0898         0.0000     -5181.0898     -5181.0898         0.0000
+
+ENERGY:     257       269.0750       810.8458       901.1148        42.2260          -5825.9982     -1376.3171         0.0000         0.0000         0.0000          -5179.0536         0.0000     -5179.0536     -5179.0536         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00105905 0.00105905 DU -9.9121 2.03616 DUDX -15042.5 -3704.86 7549.18 
+ENERGY:     258       266.4348       808.0463       901.1879        41.7044          -5822.6810     -1376.4276         0.0000         0.0000         0.0000          -5181.7351         0.0000     -5181.7351     -5181.7351         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000348613 0.000710438 DU -0.645359 2.68152 DUDX -3704.86 1.23254 7549.18 
+LINE MINIMIZER REDUCING GRADIENT FROM 18988.7 TO 18.9887
+ENERGY:     259       268.9131       807.3762       900.9946        42.1164          -5833.0865     -1377.8147         0.0000         0.0000         0.0000          -5191.5009         0.0000     -5191.5009     -5191.5009         0.0000
+
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     260       278.3515       809.8626       901.1393        42.7623          -5843.1566     -1378.7163         0.0000         0.0000         0.0000          -5189.7572         0.0000     -5189.7572     -5189.7572         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000815168 0.000815168 DU -9.76581 1.74377 DUDX -18988.7 -4954.4 9284.39 
+ENERGY:     261       271.4109       807.8864       901.0068        42.3154          -5836.6409     -1378.1878         0.0000         0.0000         0.0000          -5192.2091         0.0000     -5192.2091     -5192.2091         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000284672 0.000530496 DU -0.708125 2.45189 DUDX -4954.4 -15.9265 9284.39 
+LINE MINIMIZER REDUCING GRADIENT FROM 15603.4 TO 15.6034
+ENERGY:     262       268.5513       808.6706       900.9981        42.6376          -5844.6430     -1378.2281         0.0000         0.0000         0.0000          -5202.0136         0.0000     -5202.0136     -5202.0136         0.0000
+
+ENERGY:     263       271.9708       812.3771       901.3220        43.2978          -5852.3339     -1377.7114         0.0000         0.0000         0.0000          -5201.0776         0.0000     -5201.0776     -5201.0776         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000972896 0.000972896 DU -9.80449 0.936018 DUDX -15603.4 -4562.61 6507.85 
+ENERGY:     264       269.2053       809.8464       901.0913        42.8692          -5847.8564     -1378.0875         0.0000         0.0000         0.0000          -5202.9316         0.0000     -5202.9316     -5202.9316         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000401736 0.00057116 DU -0.918037 1.85406 DUDX -4562.61 -5.87187 6507.85 
+LINE MINIMIZER REDUCING GRADIENT FROM 18609 TO 18.609
+ENERGY:     265       268.5835       806.5278       900.9826        42.9442          -5854.0048     -1377.8472         0.0000         0.0000         0.0000          -5212.8138         0.0000     -5212.8138     -5212.8138         0.0000
+
+ENERGY:     266       273.7607       806.1478       901.1965        43.2797          -5859.8889     -1376.9028         0.0000         0.0000         0.0000          -5212.4071         0.0000     -5212.4071     -5212.4071         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00080319 0.00080319 DU -9.88218 0.40672 DUDX -18609 -5958.57 7053.9 
+ENERGY:     267       270.2411       805.9853       901.0407        43.0666          -5856.7485     -1377.5087         0.0000         0.0000         0.0000          -5213.9235         0.0000     -5213.9235     -5213.9235         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000370139 0.000433051 DU -1.10976 1.51648 DUDX -5958.57 -23.0182 7053.9 
+ENERGY:     268       270.5159       805.9628       901.0520        43.0845          -5857.0659     -1377.4587         0.0000         0.0000         0.0000          -5213.9094         0.0000     -5213.9094     -5213.9094         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000370139 4.33051e-05 DU -1.10976 0.0141679 DUDX -5958.57 -23.0182 677.587 
+ENERGY:     269       270.2678       805.9827       901.0418        43.0683          -5856.7803     -1377.5038         0.0000         0.0000         0.0000          -5213.9235         0.0000     -5213.9235     -5213.9235         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000370139 4.33051e-06 DU -1.10976 5.1869e-05 DUDX -5958.57 -23.0182 46.9757 
+LINE MINIMIZER REDUCING GRADIENT FROM 18804.6 TO 18.8046
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     270       272.7920       806.2143       900.8823        43.1128          -5869.7475     -1377.1634         0.0000         0.0000         0.0000          -5223.9095         0.0000     -5223.9095     -5223.9095         0.0000
+
+ENERGY:     271       281.2154       809.3497       901.0430        43.3407          -5882.4805     -1375.8455         0.0000         0.0000         0.0000          -5223.3771         0.0000     -5223.3771     -5223.3771         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000804637 0.000804637 DU -9.986 0.532419 DUDX -18804.6 -5959.08 7394.24 
+ENERGY:     272       275.8431       807.2637       900.9149        43.1927          -5875.5054     -1376.7067         0.0000         0.0000         0.0000          -5224.9978         0.0000     -5224.9978     -5224.9978         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00036211 0.000442527 DU -1.08827 1.62069 DUDX -5959.08 -31.8803 7394.24 
+ENERGY:     273       276.2985       807.4324       900.9233        43.2050          -5876.2059     -1376.6362         0.0000         0.0000         0.0000          -5224.9830         0.0000     -5224.9830     -5224.9830         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00036211 4.42527e-05 DU -1.08827 0.0147969 DUDX -5959.08 -31.8803 700.949 
+ENERGY:     274       275.8878       807.2802       900.9157        43.1939          -5875.5755     -1376.6998         0.0000         0.0000         0.0000          -5224.9977         0.0000     -5224.9977     -5224.9977         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00036211 4.42527e-06 DU -1.08827 2.08669e-05 DUDX -5959.08 -31.8803 41.3144 
+LINE MINIMIZER REDUCING GRADIENT FROM 17255 TO 17.255
+ENERGY:     275       272.1297       810.4201       900.1345        43.4243          -5884.6848     -1374.8116         0.0000         0.0000         0.0000          -5233.3879         0.0000     -5233.3879     -5233.3879         0.0000
+
+ENERGY:     276       277.1726       817.6952       899.7466        44.0334          -5893.6214     -1371.4250         0.0000         0.0000         0.0000          -5226.3987         0.0000     -5226.3987     -5226.3987         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000925576 0.000925576 DU -8.39011 6.98918 DUDX -17255 -832.198 16043.4 
+ENERGY:     277       272.2367       810.9618       900.0779        43.4681          -5885.5859     -1374.5467         0.0000         0.0000         0.0000          -5233.3881         0.0000     -5233.3881     -5233.3881         0.0000
+
+LINE MINIMIZER BRACKET: DX 9.25576e-05 0.000833019 DU -0.000213095 6.9894 DUDX -832.198 828.396 16043.4 
+LINE MINIMIZER REDUCING GRADIENT FROM 14586.7 TO 14.5867
+ENERGY:     278       272.0091       811.5047       899.1430        43.3550          -5897.8399     -1370.0415         0.0000         0.0000         0.0000          -5241.8695         0.0000     -5241.8695     -5241.8695         0.0000
+
+ENERGY:     279       280.4909       816.5146       898.6870        43.7404          -5909.9272     -1363.6233         0.0000         0.0000         0.0000          -5234.1176         0.0000     -5234.1176     -5234.1176         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00113451 0.00113451 DU -8.48141 7.75184 DUDX -14586.7 -360.786 14102.7 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     280       272.4670       811.8059       899.0757        43.3710          -5899.0556     -1369.4934         0.0000         0.0000         0.0000          -5241.8294         0.0000     -5241.8294     -5241.8294         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00113451 0.000113451 DU -8.48141 0.0400662 DUDX -14586.7 -360.786 1067.59 
+ENERGY:     281       272.1166       811.5766       899.1256        43.3586          -5898.1473     -1369.9048         0.0000         0.0000         0.0000          -5241.8747         0.0000     -5241.8747     -5241.8747         0.0000
+
+LINE MINIMIZER BRACKET: DX 2.86657e-05 8.47851e-05 DU -0.00517367 0.0452399 DUDX -360.786 -0.149285 1067.59 
+LINE MINIMIZER REDUCING GRADIENT FROM 14914.6 TO 14.9146
+ENERGY:     282       276.1130       813.7477       898.2850        42.4898          -5916.9149     -1364.6864         0.0000         0.0000         0.0000          -5250.9658         0.0000     -5250.9658     -5250.9658         0.0000
+
+ENERGY:     283       292.0239       821.8536       898.0470        42.0876          -5935.5897     -1357.0664         0.0000         0.0000         0.0000          -5238.6440         0.0000     -5238.6440     -5238.6440         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00131563 0.00131563 DU -9.09112 12.3218 DUDX -14914.6 1139.51 17732.3 
+ENERGY:     284       275.1822       813.2618       898.3427        42.5559          -5915.0435     -1365.3081         0.0000         0.0000         0.0000          -5251.0090         0.0000     -5251.0090     -5251.0090         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00118407 0.000131563 DU -9.13439 0.04327 DUDX -14914.6 -481.028 1139.51 
+ENERGY:     285       275.4463       813.3999       898.3249        42.5357          -5915.5993     -1365.1260         0.0000         0.0000         0.0000          -5251.0184         0.0000     -5251.0184     -5251.0184         0.0000
+
+LINE MINIMIZER BRACKET: DX 3.9069e-05 9.2494e-05 DU -0.00940281 0.0526728 DUDX -481.028 -0.24774 1139.51 
+LINE MINIMIZER REDUCING GRADIENT FROM 15483.2 TO 15.4832
+ENERGY:     286       272.9125       814.0231       897.2936        42.0506          -5929.6887     -1356.7835         0.0000         0.0000         0.0000          -5260.1924         0.0000     -5260.1924     -5260.1924         0.0000
+
+ENERGY:     287       283.3503       822.5072       897.1273        42.2284          -5943.7851     -1345.6940         0.0000         0.0000         0.0000          -5244.2658         0.0000     -5244.2658     -5244.2658         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00139233 0.00139233 DU -9.17396 15.9266 DUDX -15483.2 2332.41 20701.7 
+ENERGY:     288       272.5097       813.4934       897.3819        42.0771          -5927.8488     -1358.0167         0.0000         0.0000         0.0000          -5260.4035         0.0000     -5260.4035     -5260.4035         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00121032 0.000182006 DU -9.38503 0.211072 DUDX -15483.2 -11.5526 2332.41 
+LINE MINIMIZER REDUCING GRADIENT FROM 15109.7 TO 15.1097
+ENERGY:     289       271.3531       814.5035       896.7429        42.6729          -5944.6485     -1347.3628         0.0000         0.0000         0.0000          -5266.7388         0.0000     -5266.7388     -5266.7388         0.0000
+
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     290       286.0776       823.8623       897.1288        44.0733          -5961.5037     -1333.8821         0.0000         0.0000         0.0000          -5244.2437         0.0000     -5244.2437     -5244.2437         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00136593 0.00136593 DU -6.33536 22.4951 DUDX -15109.7 5844.06 27228.6 
+ENERGY:     291       270.0711       813.3858       896.8205        42.4269          -5939.9647     -1350.5888         0.0000         0.0000         0.0000          -5267.8491         0.0000     -5267.8491     -5267.8491         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000985164 0.00038077 DU -7.44561 1.11025 DUDX -15109.7 -8.30682 5844.06 
+LINE MINIMIZER REDUCING GRADIENT FROM 12754 TO 12.754
+ENERGY:     292       270.4456       812.1482       896.7228        43.2309          -5957.4328     -1339.5475         0.0000         0.0000         0.0000          -5274.4328         0.0000     -5274.4328     -5274.4328         0.0000
+
+ENERGY:     293       286.1502       819.3441       897.8042        44.7536          -5975.0354     -1325.3735         0.0000         0.0000         0.0000          -5252.3568         0.0000     -5252.3568     -5252.3568         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00160069 0.00160069 DU -6.58374 22.076 DUDX -12754 4653.27 23180.4 
+ENERGY:     294       268.8919       811.6546       896.6349        42.9470          -5952.7877     -1342.7499         0.0000         0.0000         0.0000          -5275.4091         0.0000     -5275.4091     -5275.4091         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00117586 0.000424833 DU -7.56002 0.97628 DUDX -12754 -45.2791 4653.27 
+ENERGY:     295       268.9994       811.6773       896.6400        42.9731          -5953.2518     -1342.4390         0.0000         0.0000         0.0000          -5275.4011         0.0000     -5275.4011     -5275.4011         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00117586 4.24833e-05 DU -7.56002 0.00798788 DUDX -12754 -45.2791 421.436 
+ENERGY:     296       268.9022       811.6566       896.6354        42.9496          -5952.8341     -1342.7189         0.0000         0.0000         0.0000          -5275.4092         0.0000     -5275.4092     -5275.4092         0.0000
+
+LINE MINIMIZER BRACKET: DX 4.24833e-06 3.8235e-05 DU -9.32876e-05 0.00808117 DUDX -45.2791 1.36295 421.436 
+LINE MINIMIZER REDUCING GRADIENT FROM 11920.6 TO 11.9206
+ENERGY:     297       272.0730       814.1776       897.6537        43.1009          -5973.3182     -1333.4117         0.0000         0.0000         0.0000          -5279.7246         0.0000     -5279.7246     -5279.7246         0.0000
+
+ENERGY:     298       294.4108       825.7935       900.0456        43.8690          -5993.9897     -1320.5250         0.0000         0.0000         0.0000          -5250.3958         0.0000     -5250.3958     -5250.3958         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00172875 0.00172875 DU -4.31542 29.3288 DUDX -11920.6 7048.42 27138.5 
+ENERGY:     299       268.7217       812.1882       897.1191        42.9728          -5965.7375     -1337.2177         0.0000         0.0000         0.0000          -5281.9533         0.0000     -5281.9533     -5281.9533         0.0000
+
+LDB: ============= START OF LOAD BALANCING ============== 7.018
+LDB: ============== END OF LOAD BALANCING =============== 7.01803
+LDB: =============== DONE WITH MIGRATION ================ 7.16979
+LINE MINIMIZER BRACKET: DX 0.00109044 0.00063831 DU -6.54416 2.22873 DUDX -11920.6 -43.3462 7048.42 
+Info: Initial time: 1 CPUs 0.0196397 s/step 0.227311 days/ns 69.6445 MB memory
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     300       268.9410       812.3314       897.1642        42.9819          -5966.4946     -1336.8575         0.0000         0.0000         0.0000          -5281.9337         0.0000     -5281.9337     -5281.9337         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00109044 6.3831e-05 DU -6.54416 0.0196807 DUDX -11920.6 -43.3462 660.181 
+ENERGY:     301       268.7425       812.2019       897.1235        42.9737          -5965.8132     -1337.1818         0.0000         0.0000         0.0000          -5281.9534         0.0000     -5281.9534     -5281.9534         0.0000
+
+LINE MINIMIZER BRACKET: DX 6.3831e-06 5.74479e-05 DU -5.23149e-05 0.019733 DUDX -43.3462 26.9563 660.181 
+LINE MINIMIZER REDUCING GRADIENT FROM 12035.6 TO 12.0356
+ENERGY:     302       270.3888       813.0012       897.7784        42.8395          -5982.8897     -1329.7516         0.0000         0.0000         0.0000          -5288.6334         0.0000     -5288.6334     -5288.6334         0.0000
+
+ENERGY:     303       286.0081       821.9979       899.7749        43.5575          -6000.0344     -1319.0050         0.0000         0.0000         0.0000          -5267.7010         0.0000     -5267.7010     -5267.7010         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00168368 0.00168368 DU -6.67997 20.9324 DUDX -12035.6 4133.24 20903 
+ENERGY:     304       268.6481       812.0180       897.4857        42.7927          -5978.5283     -1331.9326         0.0000         0.0000         0.0000          -5289.5164         0.0000     -5289.5164     -5289.5164         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00125415 0.000429532 DU -7.56298 0.883005 DUDX -12035.6 -16.4034 4133.24 
+ENERGY:     305       268.7816       812.0923       897.5110        42.7949          -5978.9642     -1331.7238         0.0000         0.0000         0.0000          -5289.5082         0.0000     -5289.5082     -5289.5082         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00125415 4.29532e-05 DU -7.56298 0.00817735 DUDX -12035.6 -16.4034 397.197 
+ENERGY:     306       268.6611       812.0252       897.4882        42.7929          -5978.5719     -1331.9118         0.0000         0.0000         0.0000          -5289.5164         0.0000     -5289.5164     -5289.5164         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00125415 4.29532e-06 DU -7.56298 1.83509e-05 DUDX -12035.6 -16.4034 24.9484 
+LINE MINIMIZER REDUCING GRADIENT FROM 11490.9 TO 11.4909
+ENERGY:     307       275.3158       812.2698       898.1320        42.6153          -5996.8759     -1324.9625         0.0000         0.0000         0.0000          -5293.5055         0.0000     -5293.5055     -5293.5055         0.0000
+
+ENERGY:     308       299.1251       820.5594       899.9175        43.0534          -6014.9564     -1315.7238         0.0000         0.0000         0.0000          -5268.0248         0.0000     -5268.0248     -5268.0248         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00160615 0.00160615 DU -3.98914 25.4807 DUDX -11490.9 6584.12 25295.8 
+ENERGY:     309       270.9473       811.2515       897.7677        42.6091          -5990.2554     -1327.7352         0.0000         0.0000         0.0000          -5295.4150         0.0000     -5295.4150     -5295.4150         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00102304 0.000583115 DU -5.89867 1.90953 DUDX -11490.9 -22.9986 6584.12 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     310       271.2835       811.3056       897.7974        42.6060          -5990.9188     -1327.4711         0.0000         0.0000         0.0000          -5295.3972         0.0000     -5295.3972     -5295.3972         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00102304 5.83115e-05 DU -5.89867 0.017832 DUDX -11490.9 -22.9986 634.704 
+ENERGY:     311       270.9799       811.2564       897.7706        42.6087          -5990.3218     -1327.7089         0.0000         0.0000         0.0000          -5295.4150         0.0000     -5295.4150     -5295.4150         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00102304 5.83115e-06 DU -5.89867 5.75711e-05 DUDX -11490.9 -22.9986 42.7456 
+LINE MINIMIZER REDUCING GRADIENT FROM 9635.62 TO 9.63562
+ENERGY:     312       271.2952       817.1504       899.3157        42.4966          -6004.4035     -1326.7621         0.0000         0.0000         0.0000          -5300.9076         0.0000     -5300.9076     -5300.9076         0.0000
+
+ENERGY:     313       284.2716       830.1841       901.8405        43.0104          -6018.0008     -1324.6927         0.0000         0.0000         0.0000          -5283.3869         0.0000     -5283.3869     -5283.3869         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00174662 0.00174662 DU -5.49259 17.5206 DUDX -9635.62 3380.55 16772.4 
+ENERGY:     314       270.0209       814.9379       898.8221        42.4656          -6000.8008     -1327.1141         0.0000         0.0000         0.0000          -5301.6684         0.0000     -5301.6684     -5301.6684         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00129418 0.000452437 DU -6.25343 0.760837 DUDX -9635.62 -13.5681 3380.55 
+ENERGY:     315       270.1105       815.1376       898.8685        42.4668          -6001.1625     -1327.0822         0.0000         0.0000         0.0000          -5301.6614         0.0000     -5301.6614     -5301.6614         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00129418 4.52437e-05 DU -6.25343 0.00704173 DUDX -9635.62 -13.5681 324.882 
+ENERGY:     316       270.0295       814.9576       898.8267        42.4657          -6000.8370     -1327.1109         0.0000         0.0000         0.0000          -5301.6684         0.0000     -5301.6684     -5301.6684         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00129418 4.52437e-06 DU -6.25343 1.51558e-05 DUDX -9635.62 -13.5681 20.268 
+LINE MINIMIZER REDUCING GRADIENT FROM 11915.3 TO 11.9153
+ENERGY:     317       267.4443       817.3751       900.2307        42.7045          -6007.0281     -1329.1236         0.0000         0.0000         0.0000          -5308.3970         0.0000     -5308.3970     -5308.3970         0.0000
+
+ENERGY:     318       274.9359       825.5381       902.4501        43.3589          -6012.6193     -1330.1573         0.0000         0.0000         0.0000          -5296.4937         0.0000     -5296.4937     -5296.4937         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00133977 0.00133977 DU -6.72861 11.9033 DUDX -11915.3 1885.69 15958.6 
+ENERGY:     319       267.2095       816.7067       899.9914        42.6474          -6006.2177     -1328.9061         0.0000         0.0000         0.0000          -5308.5688         0.0000     -5308.5688     -5308.5688         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00115691 0.000182863 DU -6.90041 0.171799 DUDX -11915.3 -5.92867 1885.69 
+LINE MINIMIZER REDUCING GRADIENT FROM 12628.4 TO 12.6284
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     320       268.9711       817.3372       901.1481        43.0422          -6015.0068     -1330.7756         0.0000         0.0000         0.0000          -5315.2838         0.0000     -5315.2838     -5315.2838         0.0000
+
+ENERGY:     321       280.0187       823.6901       903.0356        43.7672          -6023.1840     -1331.5745         0.0000         0.0000         0.0000          -5304.2470         0.0000     -5304.2470     -5304.2470         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00122818 0.00122818 DU -6.71498 11.0368 DUDX -12628.4 1711.41 16339.2 
+ENERGY:     322       268.2792       816.9618       900.9722        42.9777          -6013.9908     -1330.6087         0.0000         0.0000         0.0000          -5315.4086         0.0000     -5315.4086     -5315.4086         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00108178 0.000146398 DU -6.83977 0.124797 DUDX -12628.4 -5.84695 1711.41 
+LINE MINIMIZER REDUCING GRADIENT FROM 11233.2 TO 11.2332
+ENERGY:     323       268.2917       816.0693       902.2157        43.1444          -6021.1380     -1330.6745         0.0000         0.0000         0.0000          -5322.0914         0.0000     -5322.0914     -5322.0914         0.0000
+
+ENERGY:     324       277.3741       820.6217       904.2550        43.8332          -6027.6812     -1329.5938         0.0000         0.0000         0.0000          -5311.1909         0.0000     -5311.1909     -5311.1909         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00136692 0.00136692 DU -6.6828 10.9004 DUDX -11233.2 1485.69 14546.7 
+ENERGY:     325       267.8309       815.8931       902.0303        43.0981          -6020.3357     -1330.7257         0.0000         0.0000         0.0000          -5322.2090         0.0000     -5322.2090     -5322.2090         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00120763 0.00015929 DU -6.80045 0.117653 DUDX -11233.2 -7.76381 1485.69 
+LINE MINIMIZER REDUCING GRADIENT FROM 10929.3 TO 10.9293
+ENERGY:     326       268.3354       814.8813       903.6216        42.6256          -6025.7170     -1331.5278         0.0000         0.0000         0.0000          -5327.7809         0.0000     -5327.7809     -5327.7809         0.0000
+
+ENERGY:     327       279.6442       820.1994       906.1068        42.6004          -6030.4385     -1331.1026         0.0000         0.0000         0.0000          -5312.9903         0.0000     -5312.9903     -5312.9903         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00143713 0.00143713 DU -5.57191 14.7906 DUDX -10929.3 3175.86 17469.3 
+ENERGY:     328       267.2841       814.5588       903.1870        42.6929          -6024.5618     -1331.4550         0.0000         0.0000         0.0000          -5328.2941         0.0000     -5328.2941     -5328.2941         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00111357 0.000323559 DU -6.08504 0.513135 DUDX -10929.3 -2.93003 3175.86 
+LINE MINIMIZER REDUCING GRADIENT FROM 11094.1 TO 11.0941
+ENERGY:     329       270.7107       812.9560       904.9739        41.9826          -6033.0031     -1331.6058         0.0000         0.0000         0.0000          -5333.9857         0.0000     -5333.9857     -5333.9857         0.0000
+
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     330       285.2293       818.5678       907.8108        41.7919          -6040.6771     -1330.4452         0.0000         0.0000         0.0000          -5317.7226         0.0000     -5317.7226     -5317.7226         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00149462 0.00149462 DU -5.69168 16.2631 DUDX -11094.1 3489.91 18353.2 
+ENERGY:     331       268.8919       812.6849       904.4524        42.1053          -6031.0529     -1331.6892         0.0000         0.0000         0.0000          -5334.6077         0.0000     -5334.6077     -5334.6077         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00113726 0.000357364 DU -6.31359 0.62191 DUDX -11094.1 -7.10517 3489.91 
+LINE MINIMIZER REDUCING GRADIENT FROM 10586.8 TO 10.5868
+ENERGY:     332       271.4588       811.4264       906.3655        42.0041          -6040.0933     -1329.0693         0.0000         0.0000         0.0000          -5337.9078         0.0000     -5337.9078     -5337.9078         0.0000
+
+ENERGY:     333       288.9688       817.7481       909.2839        42.5074          -6048.3924     -1324.9457         0.0000         0.0000         0.0000          -5314.8298         0.0000     -5314.8298     -5314.8298         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00153567 0.00153567 DU -3.30017 23.078 DUDX -10586.8 6348.83 23828.2 
+ENERGY:     334       268.7876       811.0131       905.5339        41.9715          -6036.8015     -1330.2240         0.0000         0.0000         0.0000          -5339.7194         0.0000     -5339.7194     -5339.7194         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00096201 0.000573656 DU -5.11172 1.81155 DUDX -10586.8 -21.6272 6348.83 
+ENERGY:     335       268.9622       811.0069       905.6108        41.9710          -6037.1353     -1330.1180         0.0000         0.0000         0.0000          -5339.7024         0.0000     -5339.7024     -5339.7024         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00096201 5.73656e-05 DU -5.11172 0.0169438 DUDX -10586.8 -21.6272 612.452 
+ENERGY:     336       268.8042       811.0120       905.5416        41.9714          -6036.8349     -1330.2135         0.0000         0.0000         0.0000          -5339.7193         0.0000     -5339.7193     -5339.7193         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00096201 5.73656e-06 DU -5.11172 5.77299e-05 DUDX -10586.8 -21.6272 41.7554 
+LINE MINIMIZER REDUCING GRADIENT FROM 8708.56 TO 8.70856
+ENERGY:     337       266.8667       817.4100       907.5175        42.3640          -6048.9397     -1330.4454         0.0000         0.0000         0.0000          -5345.2269         0.0000     -5345.2269     -5345.2269         0.0000
+
+ENERGY:     338       275.3576       830.7612       910.4865        43.4406          -6060.3291     -1329.2490         0.0000         0.0000         0.0000          -5329.5321         0.0000     -5329.5321     -5329.5321         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00183896 0.00183896 DU -5.50757 15.6948 DUDX -8708.56 2730.56 14403.8 
+ENERGY:     339       266.3946       815.2545       906.9562        42.2086          -6046.1180     -1330.5199         0.0000         0.0000         0.0000          -5345.8239         0.0000     -5345.8239     -5345.8239         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00140045 0.000438513 DU -6.10455 0.596977 DUDX -8708.56 -6.00348 2730.56 
+LINE MINIMIZER REDUCING GRADIENT FROM 9754.34 TO 9.75434
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     340       270.1533       821.1305       908.1243        42.3084          -6059.6581     -1332.7570         0.0000         0.0000         0.0000          -5350.6987         0.0000     -5350.6987     -5350.6987         0.0000
+
+ENERGY:     341       285.2590       834.1155       910.2882        42.9378          -6072.5806     -1333.6134         0.0000         0.0000         0.0000          -5333.5935         0.0000     -5333.5935     -5333.5935         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00162552 0.00162552 DU -4.87481 17.1052 DUDX -9754.34 3745.97 17342.7 
+ENERGY:     342       267.9735       818.7872       907.6998        42.2279          -6055.9604     -1332.2723         0.0000         0.0000         0.0000          -5351.5443         0.0000     -5351.5443     -5351.5443         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00117413 0.00045139 DU -5.72038 0.845569 DUDX -9754.34 1.06617 3745.97 
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM
+LINE MINIMIZER REDUCING GRADIENT FROM 10971 TO 10.971
+ENERGY:     343       537.5792       880.4457       906.3456        44.8939          -6053.8033     -1327.6498         0.0000         0.0000         0.0000          -5012.1887         0.0000     -5012.1887     -5012.1887         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00683141 DU 0 339.356 DUDX -10971 -10971 110399 
+ENERGY:     344       267.4315       816.2104       907.3269        42.0430          -6055.7429     -1332.1694         0.0000         0.0000         0.0000          -5354.9005         0.0000     -5354.9005     -5354.9005         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000683141 0.00614827 DU -3.35623 342.712 DUDX -10971 1145.83 110399 
+ENERGY:     345       267.2100       816.3818       907.3618        42.0570          -6055.7647     -1332.1832         0.0000         0.0000         0.0000          -5354.9374         0.0000     -5354.9374     -5354.9374         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000614827 6.83141e-05 DU -3.39311 0.0368824 DUDX -10971 -66.0388 1145.83 
+ENERGY:     346       267.2294       816.3638       907.3583        42.0555          -6055.7625     -1332.1819         0.0000         0.0000         0.0000          -5354.9374         0.0000     -5354.9374     -5354.9374         0.0000
+
+LINE MINIMIZER BRACKET: DX 6.83141e-06 6.14827e-05 DU -3.72052e-05 0.0369196 DUDX -66.0388 55.1465 1145.83 
+LINE MINIMIZER REDUCING GRADIENT FROM 6381.16 TO 6.38116
+ENERGY:     347       294.9115       828.9909       905.4423        44.3509          -6061.8806     -1335.4444         0.0000         0.0000         0.0000          -5323.6295         0.0000     -5323.6295     -5323.6295         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00541937 DU 0 31.3079 DUDX -6381.16 -6381.16 17923.2 
+ENERGY:     348       267.5097       815.1660       906.5198        42.0551          -6057.3921     -1333.3297         0.0000         0.0000         0.0000          -5359.4712         0.0000     -5359.4712     -5359.4712         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00142216 0.00399721 DU -4.53382 35.8417 DUDX -6381.16 4.18125 17923.2 
+LINE MINIMIZER REDUCING GRADIENT FROM 7788.27 TO 7.78827
+ENERGY:     349       277.8958       820.0426       904.8605        42.6697          -6061.4184     -1339.0832         0.0000         0.0000         0.0000          -5355.0329         0.0000     -5355.0329     -5355.0329         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00306822 DU 0 4.4383 DUDX -7788.27 -7788.27 10679.5 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     350       268.2036       814.5390       905.6702        42.2061          -6059.1443     -1335.9828         0.0000         0.0000         0.0000          -5364.5082         0.0000     -5364.5082     -5364.5082         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00129381 0.00177441 DU -5.03701 9.47531 DUDX -7788.27 0.856018 10679.5 
+LINE MINIMIZER REDUCING GRADIENT FROM 8843.73 TO 8.84373
+ENERGY:     351       272.5992       817.4964       903.6415        42.8179          -6063.6153     -1337.5190         0.0000         0.0000         0.0000          -5364.5793         0.0000     -5364.5793     -5364.5793         0.0000
+
+ENERGY:     352       298.5920       834.4005       902.5441        44.2306          -6067.6479     -1337.6980         0.0000         0.0000         0.0000          -5325.5785         0.0000     -5325.5785     -5325.5785         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00221768 0.00221768 DU -0.0711164 39.0009 DUDX -8843.73 8773.33 26413.2 
+ENERGY:     353       267.7255       814.2680       904.5354        42.4132          -6061.4459     -1336.9229         0.0000         0.0000         0.0000          -5369.4268         0.0000     -5369.4268     -5369.4268         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00111288 0.0011048 DU -4.91853 4.84741 DUDX -8843.73 1.55715 8773.33 
+LINE MINIMIZER REDUCING GRADIENT FROM 8421.49 TO 8.42149
+ENERGY:     354       268.6931       818.6617       902.1650        43.0997          -6067.0254     -1336.2849         0.0000         0.0000         0.0000          -5370.6907         0.0000     -5370.6907     -5370.6907         0.0000
+
+ENERGY:     355       287.2661       833.8550       900.7861        44.9804          -6072.1775     -1334.4092         0.0000         0.0000         0.0000          -5339.6992         0.0000     -5339.6992     -5339.6992         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00205736 0.00205736 DU -1.26397 30.9915 DUDX -8421.49 7202.85 22958.6 
+ENERGY:     356       266.0696       815.3023       903.1340        42.6351          -6064.5108     -1336.7314         0.0000         0.0000         0.0000          -5374.1012         0.0000     -5374.1012     -5374.1012         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00110953 0.000947836 DU -4.67442 3.41045 DUDX -8421.49 -3.08702 7202.85 
+LINE MINIMIZER REDUCING GRADIENT FROM 8065.59 TO 8.06559
+ENERGY:     357       268.6053       814.6402       900.7020        42.3144          -6067.0020     -1335.4973         0.0000         0.0000         0.0000          -5376.2374         0.0000     -5376.2374     -5376.2374         0.0000
+
+ENERGY:     358       286.8253       823.3393       899.1406        42.5920          -6069.0778     -1332.8818         0.0000         0.0000         0.0000          -5350.0624         0.0000     -5350.0624     -5350.0624         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00201213 0.00201213 DU -2.13626 26.175 DUDX -8065.59 5950.87 20102 
+ENERGY:     359       265.6293       813.7738       901.6288        42.3774          -6065.9984     -1336.1859         0.0000         0.0000         0.0000          -5378.7751         0.0000     -5378.7751     -5378.7751         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00115838 0.000853747 DU -4.67392 2.53766 DUDX -8065.59 -3.14209 5950.87 
+LINE MINIMIZER REDUCING GRADIENT FROM 7491.25 TO 7.49125
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     360       272.3216       814.1706       899.2425        41.2997          -6071.7204     -1335.3624         0.0000         0.0000         0.0000          -5380.0484         0.0000     -5380.0484     -5380.0484         0.0000
+
+ENERGY:     361       295.5780       824.1970       897.8649        40.8138          -6076.9976     -1332.9898         0.0000         0.0000         0.0000          -5351.5337         0.0000     -5351.5337     -5351.5337         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00214437 0.00214437 DU -1.27333 28.5148 DUDX -7491.25 6320.43 20320.1 
+ENERGY:     362       267.2220       812.7963       900.2096        41.7191          -6069.1629     -1335.9248         0.0000         0.0000         0.0000          -5383.1407         0.0000     -5383.1407     -5383.1407         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00116427 0.000980105 DU -4.36556 3.09223 DUDX -7491.25 -5.22811 6320.43 
+LINE MINIMIZER REDUCING GRADIENT FROM 7241.26 TO 7.24126
+ENERGY:     363       272.7197       812.1509       897.8100        41.6113          -6071.6333     -1334.8288         0.0000         0.0000         0.0000          -5382.1702         0.0000     -5382.1702     -5382.1702         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00234524 DU 0 0.970431 DUDX -7241.26 -7241.26 8072.43 
+ENERGY:     364       267.3522       811.1162       898.8958        41.5058          -6070.4028     -1335.6237         0.0000         0.0000         0.0000          -5387.1564         0.0000     -5387.1564     -5387.1564         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00110923 0.001236 DU -4.01572 4.98615 DUDX -7241.26 -0.678121 8072.43 
+LINE MINIMIZER REDUCING GRADIENT FROM 6009.4 TO 6.0094
+ENERGY:     365       274.0431       813.9774       896.4899        43.0665          -6068.2530     -1337.0470         0.0000         0.0000         0.0000          -5377.7231         0.0000     -5377.7231     -5377.7231         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00324056 DU 0 9.43325 DUDX -6009.4 -6009.4 11836.9 
+ENERGY:     366       265.7876       810.1407       897.8561        41.8670          -6069.7458     -1336.3412         0.0000         0.0000         0.0000          -5390.4357         0.0000     -5390.4357     -5390.4357         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00109153 0.00214903 DU -3.27932 12.7126 DUDX -6009.4 -0.284996 11836.9 
+LINE MINIMIZER REDUCING GRADIENT FROM 5233.64 TO 5.23364
+ENERGY:     367       282.1236       810.1772       896.6572        42.9950          -6067.8479     -1342.6618         0.0000         0.0000         0.0000          -5378.5568         0.0000     -5378.5568     -5378.5568         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.0038343 DU 0 11.8789 DUDX -5233.64 -5233.64 11454.2 
+ENERGY:     368       266.8816       808.0252       897.2338        42.0508          -6069.1896     -1338.5930         0.0000         0.0000         0.0000          -5393.5912         0.0000     -5393.5912     -5393.5912         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00120428 0.00263003 DU -3.15555 15.0345 DUDX -5233.64 -6.16474 11454.2 
+ENERGY:     369       267.6108       807.8224       897.1278        42.1117          -6069.0631     -1339.0523         0.0000         0.0000         0.0000          -5393.4426         0.0000     -5393.4426     -5393.4426         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00120428 0.000263003 DU -3.15555 0.148608 DUDX -5233.64 -6.16474 1136.34 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     370       266.9466       808.0008       897.2227        42.0565          -6069.1770     -1338.6395         0.0000         0.0000         0.0000          -5393.5899         0.0000     -5393.5899     -5393.5899         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00120428 2.63003e-05 DU -3.15555 0.00133997 DUDX -5233.64 -6.16474 108.063 
+ENERGY:     371       266.8880       808.0228       897.2326        42.0513          -6069.1883     -1338.5977         0.0000         0.0000         0.0000          -5393.5912         0.0000     -5393.5912     -5393.5912         0.0000
+
+LINE MINIMIZER BRACKET: DX 2.63003e-06 2.36702e-05 DU -1.19253e-06 0.00134116 DUDX -6.16474 5.25787 108.063 
+LINE MINIMIZER REDUCING GRADIENT FROM 5726.57 TO 5.72657
+ENERGY:     372       276.1279       813.1781       896.2965        42.7174          -6064.9403     -1347.7835         0.0000         0.0000         0.0000          -5384.4039         0.0000     -5384.4039     -5384.4039         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.0035013 DU 0 9.18731 DUDX -5726.57 -5726.57 10993.9 
+ENERGY:     373       266.4235       807.6872       896.6475        42.0672          -6067.7609     -1342.0958         0.0000         0.0000         0.0000          -5397.0313         0.0000     -5397.0313     -5397.0313         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00120055 0.00230075 DU -3.44006 12.6274 DUDX -5726.57 -4.24573 10993.9 
+LINE MINIMIZER REDUCING GRADIENT FROM 5131.32 TO 5.13132
+ENERGY:     374       277.5726       815.1691       895.4547        41.7980          -6067.6460     -1348.6517         0.0000         0.0000         0.0000          -5386.3033         0.0000     -5386.3033     -5386.3033         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00380324 DU 0 10.728 DUDX -5131.32 -5131.32 10755.7 
+ENERGY:     375       266.0965       808.1511       896.0456        41.8440          -6067.7520     -1344.5576         0.0000         0.0000         0.0000          -5400.1724         0.0000     -5400.1724     -5400.1724         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00122708 0.00257616 DU -3.14111 13.8691 DUDX -5131.32 7.89615 10755.7 
+ENERGY:     376       265.9607       808.0211       896.0965        41.8605          -6067.7542     -1344.3265         0.0000         0.0000         0.0000          -5400.1419         0.0000     -5400.1419     -5400.1419         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000122708 0.00257616 DU -0.0305023 13.8691 DUDX -505.078 7.89615 10755.7 
+ENERGY:     377       266.0812       808.1372       896.0506        41.8456          -6067.7523     -1344.5347         0.0000         0.0000         0.0000          -5400.1722         0.0000     -5400.1722     -5400.1722         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.22708e-05 0.00257616 DU -0.000217788 13.8691 DUDX -43.3934 7.89615 10755.7 
+ENERGY:     378       266.0941       808.1489       896.0464        41.8443          -6067.7521     -1344.5541         0.0000         0.0000         0.0000          -5400.1724         0.0000     -5400.1724     -5400.1724         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.03817e-05 1.88913e-06 DU -0.000225247 7.45848e-06 DUDX -43.3934 6.89628e-05 7.89615 
+LINE MINIMIZER REDUCING GRADIENT FROM 5404.46 TO 5.40446
+ENERGY:     379       282.3726       812.3383       895.3404        41.0853          -6068.2641     -1351.8804         0.0000         0.0000         0.0000          -5389.0078         0.0000     -5389.0078     -5389.0078         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00354655 DU 0 11.1646 DUDX -5404.46 -5404.46 11714 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     380       267.5490       807.4144       895.5914        41.3895          -6067.9525     -1347.1930         0.0000         0.0000         0.0000          -5403.2013         0.0000     -5403.2013     -5403.2013         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00112056 0.00242599 DU -3.02886 14.1935 DUDX -5404.46 -2.19076 11714 
+LINE MINIMIZER REDUCING GRADIENT FROM 4769.95 TO 4.76995
+ENERGY:     381       281.3527       816.5535       895.2324        41.1847          -6073.0266     -1354.1098         0.0000         0.0000         0.0000          -5392.8130         0.0000     -5392.8130     -5392.8130         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00400217 DU 0 10.3883 DUDX -4769.95 -4769.95 9979.16 
+ENERGY:     382       268.3227       808.3957       895.2565        41.1295          -6069.6388     -1349.7604         0.0000         0.0000         0.0000          -5406.2948         0.0000     -5406.2948     -5406.2948         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0012959 0.00270627 DU -3.09352 13.4818 DUDX -4769.95 -4.16346 9979.16 
+LINE MINIMIZER REDUCING GRADIENT FROM 5517.31 TO 5.51731
+ENERGY:     383       273.7966       814.1293       895.2051        42.2172          -6072.6595     -1353.6889         0.0000         0.0000         0.0000          -5401.0001         0.0000     -5401.0001     -5401.0001         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00318476 DU 0 5.29474 DUDX -5517.31 -5517.31 8850.88 
+ENERGY:     384       267.3975       808.8719       895.0487        41.4027          -6070.8380     -1351.5540         0.0000         0.0000         0.0000          -5409.6712         0.0000     -5409.6712     -5409.6712         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00122366 0.0019611 DU -3.3764 8.67113 DUDX -5517.31 -1.72464 8850.88 
+LINE MINIMIZER REDUCING GRADIENT FROM 5617.57 TO 5.61757
+ENERGY:     385       271.9093       811.0820       895.5269        42.8446          -6075.6722     -1352.2126         0.0000         0.0000         0.0000          -5406.5220         0.0000     -5406.5220     -5406.5220         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00283664 DU 0 3.14918 DUDX -5617.57 -5617.57 7844.35 
+ENERGY:     386       266.6634       808.3220       895.0936        41.8683          -6072.8898     -1352.0558         0.0000         0.0000         0.0000          -5412.9983         0.0000     -5412.9983     -5412.9983         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00118428 0.00165236 DU -3.32711 6.4763 DUDX -5617.57 -1.45221 7844.35 
+LINE MINIMIZER REDUCING GRADIENT FROM 6070.85 TO 6.07085
+ENERGY:     387       273.9694       809.0888       896.0474        42.2017          -6079.8647     -1355.3202         0.0000         0.0000         0.0000          -5413.8775         0.0000     -5413.8775     -5413.8775         0.0000
+
+ENERGY:     388       296.0878       819.5197       897.8713        43.2423          -6086.6071     -1356.9956         0.0000         0.0000         0.0000          -5386.8815         0.0000     -5386.8815     -5386.8815         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00242347 0.00242347 DU -0.879182 26.996 DUDX -6070.85 5358.72 16963.7 
+ENERGY:     389       268.7221       807.5342       895.4904        41.9572          -6076.6286     -1353.9884         0.0000         0.0000         0.0000          -5416.9131         0.0000     -5416.9131     -5416.9131         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00128857 0.0011349 DU -3.9148 3.03562 DUDX -6070.85 -3.79679 5358.72 
+LINE MINIMIZER REDUCING GRADIENT FROM 7660.4 TO 7.6604
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     390       269.8418       808.5507       896.1053        42.0676          -6081.0089     -1355.3643         0.0000         0.0000         0.0000          -5419.8077         0.0000     -5419.8077     -5419.8077         0.0000
+
+ENERGY:     391       282.6716       817.2927       897.4242        42.6551          -6085.2073     -1355.2397         0.0000         0.0000         0.0000          -5400.4033         0.0000     -5400.4033     -5400.4033         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00183162 0.00183162 DU -2.89463 19.4045 DUDX -7660.4 4495.42 16720.9 
+ENERGY:     392       268.0692       807.2737       895.7950        41.9711          -6079.4110     -1355.0287         0.0000         0.0000         0.0000          -5421.3308         0.0000     -5421.3308     -5421.3308         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00115402 0.000677598 DU -4.41766 1.52303 DUDX -7660.4 0.540739 4495.42 
+LINE MINIMIZER REDUCING GRADIENT FROM 7837.24 TO 7.83724
+ENERGY:     393       267.2710       811.2315       895.7775        42.2037          -6086.1310     -1355.1302         0.0000         0.0000         0.0000          -5424.7774         0.0000     -5424.7774     -5424.7774         0.0000
+
+ENERGY:     394       277.4205       821.6022       896.4061        42.9257          -6092.7373     -1353.9203         0.0000         0.0000         0.0000          -5408.3030         0.0000     -5408.3030     -5408.3030         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00171399 0.00171399 DU -3.44667 16.4744 DUDX -7837.24 3800.59 15436.6 
+ENERGY:     395       266.3252       809.2316       895.7126        42.0738          -6083.9470     -1355.2400         0.0000         0.0000         0.0000          -5425.8437         0.0000     -5425.8437     -5425.8437         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00115353 0.000560454 DU -4.51288 1.06621 DUDX -7837.24 3.73714 3800.59 
+LINE MINIMIZER REDUCING GRADIENT FROM 7056.13 TO 7.05613
+ENERGY:     396       269.8295       809.7664       895.6048        41.8652          -6091.2402     -1355.0768         0.0000         0.0000         0.0000          -5429.2511         0.0000     -5429.2511     -5429.2511         0.0000
+
+ENERGY:     397       283.7783       815.8450       896.1379        42.3061          -6098.3530     -1353.6918         0.0000         0.0000         0.0000          -5413.9775         0.0000     -5413.9775     -5413.9775         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00180061 0.00180061 DU -3.4074 15.2736 DUDX -7056.13 3277.79 13715.4 
+ENERGY:     398       267.5931       808.9964       895.5708        41.8611          -6088.9486     -1355.2580         0.0000         0.0000         0.0000          -5430.1853         0.0000     -5430.1853     -5430.1853         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00122983 0.00057078 DU -4.34166 0.934261 DUDX -7056.13 -2.74902 3277.79 
+LINE MINIMIZER REDUCING GRADIENT FROM 7418.01 TO 7.41801
+ENERGY:     399       268.9109       810.8801       895.7618        41.3935          -6095.3001     -1355.1687         0.0000         0.0000         0.0000          -5433.5225         0.0000     -5433.5225     -5433.5225         0.0000
+
+LDB: ============= START OF LOAD BALANCING ============== 9.13755
+LDB: ============== END OF LOAD BALANCING =============== 9.13757
+LDB: =============== DONE WITH MIGRATION ================ 9.28932
+Info: Benchmark time: 1 CPUs 0.0196794 s/step 0.227771 days/ns 69.6445 MB memory
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     400       280.3432       817.9311       896.5293        41.3982          -6101.5216     -1354.0979         0.0000         0.0000         0.0000          -5419.4177         0.0000     -5419.4177     -5419.4177         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00161492 0.00161492 DU -3.33722 14.1049 DUDX -7418.01 3304.41 14202.4 
+ENERGY:     401       267.4351       809.7525       895.6432        41.4871          -6093.3607     -1355.2981         0.0000         0.0000         0.0000          -5434.3409         0.0000     -5434.3409     -5434.3409         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00111814 0.000496785 DU -4.15561 0.818388 DUDX -7418.01 -7.11669 3304.41 
+LINE MINIMIZER REDUCING GRADIENT FROM 6964.66 TO 6.96466
+ENERGY:     402       267.5785       810.6286       896.1663        41.0353          -6098.0579     -1356.0131         0.0000         0.0000         0.0000          -5438.6623         0.0000     -5438.6623     -5438.6623         0.0000
+
+ENERGY:     403       275.7490       815.5299       897.1761        40.9659          -6102.6737     -1355.9279         0.0000         0.0000         0.0000          -5429.1807         0.0000     -5429.1807     -5429.1807         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00160004 0.00160004 DU -4.32138 9.48155 DUDX -6964.66 1584.07 10304.6 
+ENERGY:     404       266.9514       810.1647       896.0343        41.0900          -6097.1963     -1355.9395         0.0000         0.0000         0.0000          -5438.8955         0.0000     -5438.8955     -5438.8955         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00130428 0.00029576 DU -4.55458 0.233196 DUDX -6964.66 -6.25687 1584.07 
+LINE MINIMIZER REDUCING GRADIENT FROM 7874.79 TO 7.87479
+ENERGY:     405       270.2833       808.2344       896.4611        40.9275          -6104.6583     -1354.4188         0.0000         0.0000         0.0000          -5443.1707         0.0000     -5443.1707     -5443.1707         0.0000
+
+ENERGY:     406       280.9003       809.9510       897.3268        41.0846          -6112.0038     -1352.1769         0.0000         0.0000         0.0000          -5434.9178         0.0000     -5434.9178     -5434.9178         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00132807 0.00132807 DU -4.27522 8.25287 DUDX -7874.79 1463.29 11004.9 
+ENERGY:     407       269.2856       808.2970       896.3665        40.9318          -6103.5002     -1354.7024         0.0000         0.0000         0.0000          -5443.3217         0.0000     -5443.3217     -5443.3217         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00112056 0.000207517 DU -4.42621 0.150986 DUDX -7874.79 -7.25037 1463.29 
+LINE MINIMIZER REDUCING GRADIENT FROM 7014.25 TO 7.01425
+ENERGY:     408       269.6079       808.1087       896.9189        40.9020          -6110.4609     -1353.6995         0.0000         0.0000         0.0000          -5448.6230         0.0000     -5448.6230     -5448.6230         0.0000
+
+ENERGY:     409       274.8580       810.7161       897.8879        41.1352          -6117.3769     -1352.1334         0.0000         0.0000         0.0000          -5444.9131         0.0000     -5444.9131     -5444.9131         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00139438 0.00139438 DU -5.30126 3.70987 DUDX -7014.25 -582.487 5920.02 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     410       269.9106       808.2433       896.9966        40.9135          -6111.1539     -1353.5694         0.0000         0.0000         0.0000          -5448.6591         0.0000     -5448.6591     -5448.6591         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000139438 0.00125494 DU -0.0361778 3.74605 DUDX -582.487 63.69 5920.02 
+ENERGY:     411       269.8781       808.2286       896.9887        40.9123          -6111.0846     -1353.5827         0.0000         0.0000         0.0000          -5448.6596         0.0000     -5448.6596     -5448.6596         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000125494 1.39438e-05 DU -0.0366152 0.000437367 DUDX -582.487 -0.957317 63.69 
+LINE MINIMIZER REDUCING GRADIENT FROM 9439.01 TO 9.43901
+ENERGY:     412       267.0571       809.9600       897.7203        41.1280          -6116.9949     -1352.5236         0.0000         0.0000         0.0000          -5453.6531         0.0000     -5453.6531     -5453.6531         0.0000
+
+ENERGY:     413       269.3952       814.0823       898.8097        41.5119          -6122.8863     -1350.8831         0.0000         0.0000         0.0000          -5449.9703         0.0000     -5449.9703     -5449.9703         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000986193 0.000986193 DU -4.99351 3.68279 DUDX -9439.01 -680.55 8173.85 
+ENERGY:     414       267.0581       810.2646       897.8131        41.1588          -6117.5843     -1352.3872         0.0000         0.0000         0.0000          -5453.6769         0.0000     -5453.6769     -5453.6769         0.0000
+
+LINE MINIMIZER BRACKET: DX 9.86193e-05 0.000887573 DU -0.0237606 3.70655 DUDX -680.55 198.854 8173.85 
+ENERGY:     415       267.0533       810.1937       897.7919        41.1517          -6117.4510     -1352.4186         0.0000         0.0000         0.0000          -5453.6791         0.0000     -5453.6791     -5453.6791         0.0000
+
+LINE MINIMIZER BRACKET: DX 7.63234e-05 2.22959e-05 DU -0.0259767 0.00221614 DUDX -680.55 -0.0513227 198.854 
+LINE MINIMIZER REDUCING GRADIENT FROM 9552.58 TO 9.55258
+ENERGY:     416       265.3644       811.1473       898.6080        41.4354          -6124.8536     -1351.1107         0.0000         0.0000         0.0000          -5459.4093         0.0000     -5459.4093     -5459.4093         0.0000
+
+ENERGY:     417       267.0969       814.0058       899.7607        41.9212          -6132.3077     -1349.2116         0.0000         0.0000         0.0000          -5458.7348         0.0000     -5458.7348     -5458.7348         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000933369 0.000933369 DU -5.73024 0.674554 DUDX -9552.58 -2722.77 4195.59 
+ENERGY:     418       265.6406       812.0489       899.0235        41.6031          -6127.7905     -1350.4391         0.0000         0.0000         0.0000          -5459.9135         0.0000     -5459.9135     -5459.9135         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000368795 0.000564574 DU -0.504181 1.17873 DUDX -2722.77 -8.35454 4195.59 
+LINE MINIMIZER REDUCING GRADIENT FROM 8869.12 TO 8.86912
+ENERGY:     419       265.3641       811.0812       899.8896        41.5789          -6134.4652     -1348.4954         0.0000         0.0000         0.0000          -5465.0469         0.0000     -5465.0469     -5465.0469         0.0000
+
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     420       269.0304       811.9778       901.0574        41.7272          -6141.2540     -1345.8096         0.0000         0.0000         0.0000          -5463.2707         0.0000     -5463.2707     -5463.2707         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000961459 0.000961459 DU -5.13339 1.77614 DUDX -8869.12 -1785.76 5539.85 
+ENERGY:     421       265.8990       811.1284       900.1488        41.5993          -6136.1213     -1347.9144         0.0000         0.0000         0.0000          -5465.2601         0.0000     -5465.2601     -5465.2601         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000236291 0.000725168 DU -0.213232 1.98937 DUDX -1785.76 -16.4196 5539.85 
+ENERGY:     422       266.1109       811.1655       900.2320        41.6077          -6136.6310     -1347.7266         0.0000         0.0000         0.0000          -5465.2415         0.0000     -5465.2415     -5465.2415         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000236291 7.25168e-05 DU -0.213232 0.0186113 DUDX -1785.76 -16.4196 530.018 
+ENERGY:     423       265.9192       811.1316       900.1570        41.6001          -6136.1722     -1347.8958         0.0000         0.0000         0.0000          -5465.2600         0.0000     -5465.2600     -5465.2600         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000236291 7.25168e-06 DU -0.213232 7.87506e-05 DUDX -1785.76 -16.4196 38.1417 
+ENERGY:     424       265.9051       811.1294       900.1513        41.5996          -6136.1366     -1347.9088         0.0000         0.0000         0.0000          -5465.2601         0.0000     -5465.2601     -5465.2601         0.0000
+
+LINE MINIMIZER BRACKET: DX 2.18242e-06 5.06926e-06 DU -1.79184e-05 9.6669e-05 DUDX -16.4196 -0.000900453 38.1417 
+LINE MINIMIZER REDUCING GRADIENT FROM 9001.96 TO 9.00196
+ENERGY:     425       264.5682       812.8637       901.2384        41.3604          -6143.3841     -1346.9115         0.0000         0.0000         0.0000          -5470.2649         0.0000     -5470.2649     -5470.2649         0.0000
+
+ENERGY:     426       266.6788       816.3990       902.6004        41.2972          -6150.8543     -1344.7756         0.0000         0.0000         0.0000          -5468.6546         0.0000     -5468.6546     -5468.6546         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000907373 0.000907373 DU -5.0048 1.61032 DUDX -9001.96 -1966.42 5653.82 
+ENERGY:     427       264.7874       813.6180       901.5699        41.3267          -6145.3238     -1346.4831         0.0000         0.0000         0.0000          -5470.5050         0.0000     -5470.5050     -5470.5050         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000238468 0.000668905 DU -0.240025 1.85034 DUDX -1966.42 -39.5353 5653.82 
+ENERGY:     428       264.8917       813.8519       901.6663        41.3195          -6145.8708     -1346.3478         0.0000         0.0000         0.0000          -5470.4893         0.0000     -5470.4893     -5470.4893         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000238468 6.68905e-05 DU -0.240025 0.0156856 DUDX -1966.42 -39.5353 509.151 
+ENERGY:     429       264.7969       813.6409       901.5795        41.3259          -6145.3785     -1346.4699         0.0000         0.0000         0.0000          -5470.5050         0.0000     -5470.5050     -5470.5050         0.0000
+
+LINE MINIMIZER BRACKET: DX 6.68905e-06 6.02015e-05 DU -8.15323e-05 0.0157672 DUDX -39.5353 15.1644 509.151 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     430       264.7943       813.6346       901.5768        41.3262          -6145.3633     -1346.4736         0.0000         0.0000         0.0000          -5470.5051         0.0000     -5470.5051     -5470.5051         0.0000
+
+LINE MINIMIZER BRACKET: DX 4.83488e-06 1.85417e-06 DU -9.55885e-05 1.40562e-05 DUDX -39.5353 -0.00207661 15.1644 
+LINE MINIMIZER REDUCING GRADIENT FROM 8551.33 TO 8.55133
+ENERGY:     431       265.4986       814.4350       903.0063        41.0720          -6152.6966     -1345.9494         0.0000         0.0000         0.0000          -5474.6342         0.0000     -5474.6342     -5474.6342         0.0000
+
+ENERGY:     432       270.3100       817.3012       904.7017        41.0159          -6160.2974     -1343.4011         0.0000         0.0000         0.0000          -5470.3698         0.0000     -5470.3698     -5470.3698         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000935744 0.000935744 DU -4.1291 4.26435 DUDX -8551.33 -134.234 9546.31 
+ENERGY:     433       265.7943       814.6284       903.1639        41.0575          -6153.4435     -1345.8055         0.0000         0.0000         0.0000          -5474.6049         0.0000     -5474.6049     -5474.6049         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000935744 9.35744e-05 DU -4.1291 0.0292378 DUDX -8551.33 -134.234 761.246 
+ENERGY:     434       265.5404       814.4627       903.0298        41.0697          -6152.8087     -1345.9291         0.0000         0.0000         0.0000          -5474.6351         0.0000     -5474.6351     -5474.6351         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.406e-05 7.95144e-05 DU -0.000947303 0.0301851 DUDX -134.234 -0.474138 761.246 
+LINE MINIMIZER REDUCING GRADIENT FROM 6520.13 TO 6.52013
+ENERGY:     435       266.6972       811.4340       904.2687        40.9061          -6158.1022     -1343.3653         0.0000         0.0000         0.0000          -5478.1615         0.0000     -5478.1615     -5478.1615         0.0000
+
+ENERGY:     436       271.8462       810.7533       905.7696        40.9951          -6163.7270     -1337.7473         0.0000         0.0000         0.0000          -5472.1102         0.0000     -5472.1102     -5472.1102         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00120173 0.00120173 DU -3.52638 6.05125 DUDX -6520.13 810.419 9607.84 
+ENERGY:     437       266.3795       811.6482       904.1220        40.9116          -6157.5147     -1343.7583         0.0000         0.0000         0.0000          -5478.2118         0.0000     -5478.2118     -5478.2118         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0010717 0.000130033 DU -3.57669 0.0503067 DUDX -6520.13 -33.9972 810.419 
+ENERGY:     438       266.4092       811.6255       904.1365        40.9109          -6157.5733     -1343.7205         0.0000         0.0000         0.0000          -5478.2117         0.0000     -5478.2117     -5478.2117         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0010717 1.30033e-05 DU -3.57669 0.000102173 DUDX -6520.13 -33.9972 49.737 
+ENERGY:     439       266.3915       811.6390       904.1279        40.9113          -6157.5385     -1343.7430         0.0000         0.0000         0.0000          -5478.2119         0.0000     -5478.2119     -5478.2119         0.0000
+
+LINE MINIMIZER BRACKET: DX 5.28109e-06 7.72223e-06 DU -8.98036e-05 0.000191976 DUDX -33.9972 -0.00797158 49.737 
+LINE MINIMIZER REDUCING GRADIENT FROM 5343.75 TO 5.34375
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     440       267.3249       811.5114       904.9899        40.8775          -6164.4345     -1340.5600         0.0000         0.0000         0.0000          -5480.2908         0.0000     -5480.2908     -5480.2908         0.0000
+
+ENERGY:     441       273.4655       814.6333       906.1476        41.1307          -6171.6084     -1334.3035         0.0000         0.0000         0.0000          -5470.5348         0.0000     -5470.5348     -5470.5348         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00142027 0.00142027 DU -2.07895 9.75603 DUDX -5343.75 2533.78 11440.3 
+ENERGY:     442       266.4658       811.1988       904.6846        40.8570          -6162.2218     -1341.8327         0.0000         0.0000         0.0000          -5480.8483         0.0000     -5480.8483     -5480.8483         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000970162 0.000450106 DU -2.63638 0.557425 DUDX -5343.75 -42.1561 2533.78 
+ENERGY:     443       266.5282       811.2153       904.7138        40.8578          -6162.4418     -1341.7177         0.0000         0.0000         0.0000          -5480.8444         0.0000     -5480.8444     -5480.8444         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000970162 4.50106e-05 DU -2.63638 0.00381049 DUDX -5343.75 -42.1561 211.605 
+ENERGY:     444       266.4758       811.2013       904.6894        40.8571          -6162.2583     -1341.8137         0.0000         0.0000         0.0000          -5480.8484         0.0000     -5480.8484     -5480.8484         0.0000
+
+LINE MINIMIZER BRACKET: DX 7.48131e-06 3.75292e-05 DU -0.000157829 0.00396832 DUDX -42.1561 -0.0329536 211.605 
+LINE MINIMIZER REDUCING GRADIENT FROM 4526.51 TO 4.52651
+ENERGY:     445       266.6926       811.8942       905.2561        40.8005          -6166.9733     -1339.5369         0.0000         0.0000         0.0000          -5481.8667         0.0000     -5481.8667     -5481.8667         0.0000
+
+ENERGY:     446       273.5263       817.4800       906.2221        41.1531          -6171.7514     -1335.0847         0.0000         0.0000         0.0000          -5468.4547         0.0000     -5468.4547     -5468.4547         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00178395 0.00178395 DU -1.01833 13.4121 DUDX -4526.51 3421.03 11686.5 
+ENERGY:     447       265.7885       810.9957       904.9642        40.7746          -6164.9464     -1340.7433         0.0000         0.0000         0.0000          -5483.1667         0.0000     -5483.1667     -5483.1667         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00101953 0.000764426 DU -2.3183 1.29998 DUDX -4526.51 -11.6712 3421.03 
+ENERGY:     448       265.8242       811.0450       904.9901        40.7738          -6165.1486     -1340.6391         0.0000         0.0000         0.0000          -5483.1546         0.0000     -5483.1546     -5483.1546         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00101953 7.64426e-05 DU -2.3183 0.0121437 DUDX -4526.51 -11.6712 329.465 
+ENERGY:     449       265.7915       811.0002       904.9668        40.7745          -6164.9666     -1340.7330         0.0000         0.0000         0.0000          -5483.1667         0.0000     -5483.1667     -5483.1667         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00101953 7.64426e-06 DU -2.3183 4.10918e-05 DUDX -4526.51 -11.6712 22.4229 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     450       265.7895       810.9972       904.9651        40.7746          -6164.9533     -1340.7398         0.0000         0.0000         0.0000          -5483.1667         0.0000     -5483.1667     -5483.1667         0.0000
+
+LINE MINIMIZER BRACKET: DX 2.61686e-06 5.0274e-06 DU -1.52713e-05 5.63631e-05 DUDX -11.6712 -0.0002304 22.4229 
+LINE MINIMIZER REDUCING GRADIENT FROM 4459.89 TO 4.45989
+ENERGY:     451       265.9543       809.9211       905.5445        40.6613          -6166.9674     -1338.1545         0.0000         0.0000         0.0000          -5483.0406         0.0000     -5483.0406     -5483.0406         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00222288 DU 0 0.126131 DUDX -4459.89 -4459.89 4564.57 
+ENERGY:     452       264.7120       809.4881       905.1704        40.6472          -6165.9647     -1339.6638         0.0000         0.0000         0.0000          -5485.6109         0.0000     -5485.6109     -5485.6109         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00109748 0.0011254 DU -2.44415 2.57028 DUDX -4459.89 2.28753 4564.57 
+LINE MINIMIZER REDUCING GRADIENT FROM 4901.31 TO 4.90131
+ENERGY:     453       268.1867       809.2994       906.1863        40.5020          -6171.5072     -1338.0142         0.0000         0.0000         0.0000          -5485.3469         0.0000     -5485.3469     -5485.3469         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00230464 DU 0 0.263932 DUDX -4901.31 -4901.31 5126.96 
+ENERGY:     454       265.0668       808.2526       905.5611        40.4970          -6168.7184     -1339.0270         0.0000         0.0000         0.0000          -5488.3679         0.0000     -5488.3679     -5488.3679         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00112601 0.00117863 DU -2.75705 3.02099 DUDX -4901.31 0.905956 5126.96 
+LINE MINIMIZER REDUCING GRADIENT FROM 5329.15 TO 5.32915
+ENERGY:     455       266.4027       810.0084       906.5744        40.3234          -6173.1733     -1339.4982         0.0000         0.0000         0.0000          -5489.3626         0.0000     -5489.3626     -5489.3626         0.0000
+
+ENERGY:     456       277.3724       819.6380       908.4156        40.7376          -6177.2042     -1338.6227         0.0000         0.0000         0.0000          -5469.6633         0.0000     -5469.6633     -5469.6633         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00209972 0.00209972 DU -0.994634 19.6993 DUDX -5329.15 4405.95 14430.1 
+ENERGY:     457       264.6359       808.2402       906.0149        40.3289          -6171.2158     -1339.4477         0.0000         0.0000         0.0000          -5491.4436         0.0000     -5491.4436     -5491.4436         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00115178 0.000947945 DU -3.07568 2.08105 DUDX -5329.15 -7.63396 4405.95 
+ENERGY:     458       264.7258       808.3448       906.0633        40.3230          -6171.4155     -1339.4649         0.0000         0.0000         0.0000          -5491.4235         0.0000     -5491.4235     -5491.4235         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00115178 9.47945e-05 DU -3.07568 0.0201023 DUDX -5329.15 -7.63396 431.815 
+ENERGY:     459       264.6440       808.2499       906.0197        40.3283          -6171.2358     -1339.4495         0.0000         0.0000         0.0000          -5491.4435         0.0000     -5491.4435     -5491.4435         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00115178 9.47945e-06 DU -3.07568 0.000135846 DUDX -5329.15 -7.63396 36.2957 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     460       264.6373       808.2419       906.0157        40.3288          -6171.2193     -1339.4480         0.0000         0.0000         0.0000          -5491.4436         0.0000     -5491.4436     -5491.4436         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.64733e-06 7.83212e-06 DU -6.28798e-06 0.000142134 DUDX -7.63396 -0.000144921 36.2957 
+LINE MINIMIZER REDUCING GRADIENT FROM 6488.96 TO 6.48896
+ENERGY:     461       262.5378       809.2854       906.8465        40.0408          -6171.8892     -1340.5969         0.0000         0.0000         0.0000          -5493.7755         0.0000     -5493.7755     -5493.7755         0.0000
+
+ENERGY:     462       268.3319       817.0978       908.4372        40.2425          -6172.2463     -1340.4921         0.0000         0.0000         0.0000          -5478.6289         0.0000     -5478.6289     -5478.6289         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00167995 0.00167995 DU -2.33186 15.1465 DUDX -6488.96 3748.38 14378 
+ENERGY:     463       262.4132       808.1247       906.4563        40.0892          -6171.6827     -1340.3186         0.0000         0.0000         0.0000          -5494.9179         0.0000     -5494.9179     -5494.9179         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00106697 0.000612982 DU -3.47431 1.14245 DUDX -6488.96 -13.5822 3748.38 
+ENERGY:     464       262.3792       808.2003       906.4908        40.0814          -6171.7053     -1340.3538         0.0000         0.0000         0.0000          -5494.9073         0.0000     -5494.9073     -5494.9073         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00106697 6.12982e-05 DU -3.47431 0.010639 DUDX -6488.96 -13.5822 360.767 
+ENERGY:     465       262.4093       808.1318       906.4597        40.0884          -6171.6850     -1340.3222         0.0000         0.0000         0.0000          -5494.9179         0.0000     -5494.9179     -5494.9179         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00106697 6.12982e-06 DU -3.47431 3.14247e-05 DUDX -6488.96 -13.5822 23.8359 
+LINE MINIMIZER REDUCING GRADIENT FROM 6479.78 TO 6.47978
+ENERGY:     466       264.4948       805.7344       907.3557        39.7952          -6173.0021     -1342.0223         0.0000         0.0000         0.0000          -5497.6444         0.0000     -5497.6444     -5497.6444         0.0000
+
+ENERGY:     467       274.1474       809.1386       908.9241        39.8960          -6174.0703     -1342.6709         0.0000         0.0000         0.0000          -5484.6351         0.0000     -5484.6351     -5484.6351         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00161521 0.00161521 DU -2.72645 13.0093 DUDX -6479.78 3129.12 13061.7 
+ENERGY:     468       263.0043       805.8801       906.9923        39.8473          -6172.6031     -1341.5818         0.0000         0.0000         0.0000          -5498.4611         0.0000     -5498.4611     -5498.4611         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0010906 0.00052461 DU -3.54319 0.816739 DUDX -6479.78 -10.6724 3129.12 
+ENERGY:     469       263.1179       805.8380       907.0254        39.8402          -6172.6443     -1341.6308         0.0000         0.0000         0.0000          -5498.4534         0.0000     -5498.4534     -5498.4534         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0010906 5.2461e-05 DU -3.54319 0.00764372 DUDX -6479.78 -10.6724 302.12 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     470       263.0153       805.8756       906.9955        39.8465          -6172.6073     -1341.5868         0.0000         0.0000         0.0000          -5498.4611         0.0000     -5498.4611     -5498.4611         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0010906 5.2461e-06 DU -3.54319 2.60259e-05 DUDX -6479.78 -10.6724 20.5948 
+MINIMIZER RESTARTING CONJUGATE GRADIENT ALGORITHM
+LINE MINIMIZER REDUCING GRADIENT FROM 7175.66 TO 7.17566
+ENERGY:     471       436.1791       851.5870       908.5605        45.2109          -6191.1441     -1345.7787         0.0000         0.0000         0.0000          -5295.3852         0.0000     -5295.3852     -5295.3852         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00775766 DU 0 203.076 DUDX -7175.66 -7175.66 59574.6 
+ENERGY:     472       262.7960       805.6411       906.9490        40.0838          -6174.5803     -1342.3478         0.0000         0.0000         0.0000          -5501.4582         0.0000     -5501.4582     -5501.4582         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0008345 0.00692316 DU -2.99718 206.073 DUDX -7175.66 -7.11959 59574.6 
+LINE MINIMIZER REDUCING GRADIENT FROM 6327.01 TO 6.32701
+ENERGY:     473       281.7714       811.4594       907.2642        42.5464          -6182.1675     -1346.4643         0.0000         0.0000         0.0000          -5485.5905         0.0000     -5485.5905     -5485.5905         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00448163 DU 0 15.8678 DUDX -6327.01 -6327.01 13454.4 
+ENERGY:     474       263.7522       803.7847       906.8216        40.5556          -6176.9887     -1343.9405         0.0000         0.0000         0.0000          -5506.0151         0.0000     -5506.0151     -5506.0151         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00143678 0.00304485 DU -4.55686 20.4247 DUDX -6327.01 -13.3435 13454.4 
+ENERGY:     475       264.5780       803.8374       906.8224        40.6941          -6177.5021     -1344.2449         0.0000         0.0000         0.0000          -5505.8151         0.0000     -5505.8151     -5505.8151         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00143678 0.000304485 DU -4.55686 0.199995 DUDX -6327.01 -13.3435 1327.19 
+ENERGY:     476       263.8250       803.7829       906.8213        40.5688          -6177.0400     -1343.9715         0.0000         0.0000         0.0000          -5506.0135         0.0000     -5506.0135     -5506.0135         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00143678 3.04485e-05 DU -4.55686 0.00163381 DUDX -6327.01 -13.3435 120.661 
+ENERGY:     477       263.7594       803.7845       906.8216        40.5569          -6176.9939     -1343.9436         0.0000         0.0000         0.0000          -5506.0151         0.0000     -5506.0151     -5506.0151         0.0000
+
+LINE MINIMIZER BRACKET: DX 3.04485e-06 2.74036e-05 DU -2.02285e-05 0.00165404 DUDX -13.3435 0.0565001 120.661 
+LINE MINIMIZER REDUCING GRADIENT FROM 7524.25 TO 7.52425
+ENERGY:     478       279.9392       804.7551       905.9768        41.0838          -6181.5521     -1347.4772         0.0000         0.0000         0.0000          -5497.2743         0.0000     -5497.2743     -5497.2743         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00303295 DU 0 8.74084 DUDX -7524.25 -7524.25 13375.3 
+ENERGY:     479       265.5352       801.3207       906.3957        40.6675          -6178.6185     -1345.4606         0.0000         0.0000         0.0000          -5510.1599         0.0000     -5510.1599     -5510.1599         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00109649 0.00193646 DU -4.14481 12.8857 DUDX -7524.25 -27.112 13375.3 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     480       266.3276       801.2136       906.3346        40.6964          -6178.9082     -1345.7004         0.0000         0.0000         0.0000          -5510.0364         0.0000     -5510.0364     -5510.0364         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00109649 0.000193646 DU -4.14481 0.123492 DUDX -7524.25 -27.112 1302.89 
+ENERGY:     481       265.6080       801.3055       906.3894        40.6702          -6178.6474     -1345.4850         0.0000         0.0000         0.0000          -5510.1592         0.0000     -5510.1592     -5510.1592         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00109649 1.93646e-05 DU -4.14481 0.000761828 DUDX -7524.25 -27.112 105.798 
+ENERGY:     482       265.5500       801.3175       906.3944        40.6680          -6178.6244     -1345.4656         0.0000         0.0000         0.0000          -5510.1600         0.0000     -5510.1600     -5510.1600         0.0000
+
+LINE MINIMIZER BRACKET: DX 3.95024e-06 1.54144e-05 DU -5.35515e-05 0.00081538 DUDX -27.112 -0.000920919 105.798 
+LINE MINIMIZER REDUCING GRADIENT FROM 6405.31 TO 6.40531
+ENERGY:     483       275.1118       808.7247       905.7877        40.9364          -6189.6320     -1347.7441         0.0000         0.0000         0.0000          -5506.8155         0.0000     -5506.8155     -5506.8155         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00254299 DU 0 3.3445 DUDX -6405.31 -6405.31 9090.16 
+ENERGY:     484       266.7619       802.7698       906.0568        40.6441          -6183.1838     -1346.6004         0.0000         0.0000         0.0000          -5513.5515         0.0000     -5513.5515     -5513.5515         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0010549 0.00148809 DU -3.39153 6.73602 DUDX -6405.31 -16.6153 9090.16 
+ENERGY:     485       267.2464       803.1585       906.0189        40.6562          -6183.8278     -1346.7388         0.0000         0.0000         0.0000          -5513.4866         0.0000     -5513.4866     -5513.4866         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0010549 0.000148809 DU -3.39153 0.064876 DUDX -6405.31 -16.6153 888.733 
+ENERGY:     486       266.8068       802.8066       906.0529        40.6452          -6183.2482     -1346.6144         0.0000         0.0000         0.0000          -5513.5511         0.0000     -5513.5511     -5513.5511         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.0010549 1.48809e-05 DU -3.39153 0.000425989 DUDX -6405.31 -16.6153 73.8701 
+ENERGY:     487       266.7701       802.7765       906.0560        40.6443          -6183.1956     -1346.6030         0.0000         0.0000         0.0000          -5513.5515         0.0000     -5513.5515     -5513.5515         0.0000
+
+LINE MINIMIZER BRACKET: DX 2.73256e-06 1.21484e-05 DU -2.27019e-05 0.000448691 DUDX -16.6153 -0.0004843 73.8701 
+LINE MINIMIZER REDUCING GRADIENT FROM 5209.16 TO 5.20916
+ENERGY:     488       269.5630       807.0550       905.4963        40.7807          -6185.8579     -1347.1518         0.0000         0.0000         0.0000          -5510.1148         0.0000     -5510.1148     -5510.1148         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.0026448 DU 0 3.43677 DUDX -5209.16 -5209.16 7828.92 
+ENERGY:     489       265.4188       803.2434       905.7503        40.5553          -6184.2682     -1347.0125         0.0000         0.0000         0.0000          -5516.3130         0.0000     -5516.3130     -5516.3130         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00105838 0.00158642 DU -2.76145 6.19822 DUDX -5209.16 -6.35114 7828.92 
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     490       265.4993       803.4563       905.7138        40.5585          -6184.4281     -1347.0518         0.0000         0.0000         0.0000          -5516.2520         0.0000     -5516.2520     -5516.2520         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00105838 0.000158642 DU -2.76145 0.0609647 DUDX -5209.16 -6.35114 775.005 
+ENERGY:     491       265.4235       803.2630       905.7465        40.5554          -6184.2842     -1347.0167         0.0000         0.0000         0.0000          -5516.3125         0.0000     -5516.3125     -5516.3125         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00105838 1.58642e-05 DU -2.76145 0.000518868 DUDX -5209.16 -6.35114 71.7656 
+ENERGY:     492       265.4192       803.2453       905.7499        40.5553          -6184.2698     -1347.0129         0.0000         0.0000         0.0000          -5516.3130         0.0000     -5516.3130     -5516.3130         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.58642e-06 1.42778e-05 DU -3.87944e-06 0.000522748 DUDX -6.35114 1.46035 71.7656 
+LINE MINIMIZER REDUCING GRADIENT FROM 4810.37 TO 4.81037
+ENERGY:     493       268.9939       802.5226       904.5417        40.0761          -6185.6261     -1346.0385         0.0000         0.0000         0.0000          -5515.5304         0.0000     -5515.5304     -5515.5304         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00283304 DU 0 0.782643 DUDX -4810.37 -4810.37 5335.36 
+ENERGY:     494       265.1471       801.7671       905.1072        40.2507          -6184.9066     -1346.8900         0.0000         0.0000         0.0000          -5519.5246         0.0000     -5519.5246     -5519.5246         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00133959 0.00149345 DU -3.21164 3.99428 DUDX -4810.37 7.68578 5335.36 
+ENERGY:     495       265.0162       801.8234       905.1657        40.2748          -6184.8428     -1346.9309         0.0000         0.0000         0.0000          -5519.4935         0.0000     -5519.4935     -5519.4935         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.000133959 0.00149345 DU -0.0311066 3.99428 DUDX -472.167 7.68578 5335.36 
+ENERGY:     496       265.1324       801.7718       905.1130        40.2531          -6184.9002     -1346.8944         0.0000         0.0000         0.0000          -5519.5244         0.0000     -5519.5244     -5519.5244         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.33959e-05 0.00149345 DU -0.00021833 3.99428 DUDX -40.283 7.68578 5335.36 
+ENERGY:     497       265.1447       801.7678       905.1081        40.2511          -6184.9056     -1346.8907         0.0000         0.0000         0.0000          -5519.5246         0.0000     -5519.5246     -5519.5246         0.0000
+
+LINE MINIMIZER BRACKET: DX 1.12495e-05 2.14638e-06 DU -0.000226578 8.24864e-06 DUDX -40.283 0.000145564 7.68578 
+LINE MINIMIZER REDUCING GRADIENT FROM 4875.19 TO 4.87519
+ENERGY:     498       268.4646       806.3720       903.5504        40.1480          -6188.7209     -1346.7785         0.0000         0.0000         0.0000          -5516.9644         0.0000     -5516.9644     -5516.9644         0.0000
+
+LINE MINIMIZER BRACKET: DX 0 0.00277609 DU 0 2.56027 DUDX -4875.19 -4875.19 6628.47 
+ENERGY:     499       264.3457       802.5872       904.3689        40.1006          -6186.4928     -1347.2510         0.0000         0.0000         0.0000          -5522.3413         0.0000     -5522.3413     -5522.3413         0.0000
+
+LINE MINIMIZER BRACKET: DX 0.00116724 0.00160886 DU -2.81664 5.37691 DUDX -4875.19 29.533 6628.47 
+Info: Benchmark time: 1 CPUs 0.0196008 s/step 0.226862 days/ns 70.5938 MB memory
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG
+
+ENERGY:     500       264.3457       802.5872       904.3689        40.1006          -6186.4928     -1347.2510         0.0000         0.0000         0.0000          -5522.3413         0.0000     -5522.3413     -5522.3413         0.0000
+
+WRITING EXTENDED SYSTEM TO RESTART FILE AT STEP 500
+WRITING COORDINATES TO RESTART FILE AT STEP 500
+FINISHED WRITING RESTART COORDINATES
+The last position output (seq=500) takes 0.014 seconds, 70.594 MB of memory in use
+WRITING VELOCITIES TO RESTART FILE AT STEP 500
+FINISHED WRITING RESTART VELOCITIES
+The last velocity output (seq=500) takes 0.011 seconds, 70.594 MB of memory in use
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 500
+WRITING COORDINATES TO OUTPUT FILE AT STEP 500
+The last position output (seq=-2) takes 0.021 seconds, 70.594 MB of memory in use
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 500
+The last velocity output (seq=-2) takes 0.011 seconds, 70.594 MB of memory in use
+====================================================
+
+WallClock: 11.447299  CPUTime: 10.207896  Memory: 70.593750 MB
