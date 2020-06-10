@@ -20,3 +20,9 @@ If you have `time` installed on the system (not the built in shell command, run 
 ```bash
 /usr/bin/time --verbose ./driver.sh
 ```
+
+### dataParsing.cpp
+
+This program should be run in the em data folder for *every* mutation. Compile with `g++ -o dataParser dataParsing.cpp`
+
+It will generate a `results.csv` file containing the results.
