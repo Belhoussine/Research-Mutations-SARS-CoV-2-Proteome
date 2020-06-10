@@ -33,17 +33,13 @@ const double wtEnergy = -5491.0831;
 //If given file exists, returns stream of file. Else exits with error. 
 ifstream getFile(string file);
 
+//Takes a file, a vector of fileInfos, and the name of the current file.
+//Goes through and finds the step in which the difference beteween the const and 
+//the step's value is the smallest. adds that to the arr vector.
 void getFileInfo(ifstream &myFile, vector<fileInfo> &arr, string name);
- 
-void read_directory(const std::string& name, stringvec& v)
-{
-    DIR* dirp = opendir(name.c_str());
-    struct dirent * dp;
-    while ((dp = readdir(dirp)) != NULL) {
-        v.push_back(dp->d_name);
-    }
-    closedir(dirp);
-}
+
+//adds all directories onto the vector v
+void read_directory(const std::string& name, stringvec& v);
 
 int main() {
 
@@ -55,16 +51,19 @@ read_directory(".", v);
 vector<fileInfo> myArray;
 vector<fileInfo> &arr = myArray;
 
-//Go through all files
+//Go through all _min.log files and run getFileInfo
 for(vector <string> :: iterator it = v.begin(); it != v.end(); ++it){
     string currTitle = *it;
-    if((currTitle.compare(".")!=0)&&(currTitle.compare("..")!=0)&&(currTitle.compare(".vscode")!=0)&&
-    (currTitle.compare("dataParsing")!=0)&&(currTitle.compare("dataParsing.cpp")!=0)&&(currTitle.compare("results.csv")!=0)){
+    if(currTitle.find("_min.log")!=string::npos){
         ifstream balFile = getFile(*it);
         ifstream &myFile = balFile;
         getFileInfo(myFile, arr, *it);
     }
 }
+
+//Printing data to file "results.csv"
+//Format:
+//Filename, Step Number, Value at step, Difference from initial value
 int i=0;
 ofstream myfile;
 myfile.open ("results.csv");
@@ -73,15 +72,6 @@ for(vector <fileInfo> :: iterator it = arr.begin(); it != arr.end(); ++it){
     myfile<<currFile.name<< "," <<currFile.step<< "," <<currFile.value<< "," <<currFile.diff<<endl;
 }
 
-
-
-// cout<<arr.at(3).name<<endl;
-// cout<<arr.at(3).step<<endl;
-// cout<<arr.at(3).value<<endl;
-// cout<<arr.at(3).diff<<endl;
-
-// std::copy(v.begin(), v.end(),
-// std::ostream_iterator<std::string>(std::cout, "\n"));
 
 }
 
@@ -97,7 +87,9 @@ ifstream getFile(string file){
     return myFile;
 }
 
-//Takes an array of accounts and the file, then goes through to fill up the array with the accounts from the file.
+//Takes a file, a vector of fileInfos, and the name of the current file.
+//Goes through and finds the step in which the difference beteween the const and 
+//the step's value is the smallest. adds that to the arr vector.
 void getFileInfo(ifstream &myFile, vector<fileInfo> &arr, string name){
     string line;
     string::size_type sz; 
@@ -134,3 +126,12 @@ void getFileInfo(ifstream &myFile, vector<fileInfo> &arr, string name){
     arr.push_back(newAddition);
 }
 
+//adds all directories onto the vector v
+void read_directory(const std::string& name, stringvec& v){
+    DIR* dirp = opendir(name.c_str());
+    struct dirent * dp;
+    while ((dp = readdir(dirp)) != NULL) {
+        v.push_back(dp->d_name);
+    }
+    closedir(dirp);
+}
