@@ -1,4 +1,4 @@
-# Project 4: Bioinformatics
+# Research: Impactful Mutations in Mpro of the SARS-CoV-2 Proteome
 
 ### Goal: Single amino acid substitution in COVID-19 spike protein
 
